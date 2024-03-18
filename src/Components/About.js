@@ -1,6 +1,6 @@
 import React from "react";
 import AboutBackground from "../Assets/about-background.png";
-import AboutBackgroundImage from "../Assets/about-background-image.png";
+import AboutBackgroundImage from "../Assets/Photo3-background-image.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const About = () => {
@@ -15,15 +15,13 @@ const About = () => {
       <div className="about-section-text-container">
         <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
-          Food Is An Important Part Of A Balanced Diet
+          Welcome to Pozo Poa Millers.
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          This is where passion for quality meets the rich heritage of maize milling.We are more than just a maize flour supplier;we are a community-focused company committed to delivering excellence in every grain.
         </p>
         <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+          At Pozo Poa Millers, our mission goes beyond milling maize; it's about nourishing lives and sustaining futures. We are dedicated to promoting sustainable agriculture, empowering local farmers and contributing to the overall weell-being of our communities.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>

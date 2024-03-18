@@ -1,0 +1,2549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0036)https://www.logomaker.com/myprojects -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr" class="js"><script async="" src="./pozopoa_files/gtm.js"></script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>#onetrust-consent-sdk * {font-size: 100% !important;}#ot-sdk-btn.ot-sdk-show-settings, #ot-sdk-btn.optanon-show-settings, #ot-sdk-btn.ot-sdk-show-settings:hover, #ot-sdk-btn.optanon-show-settings:hover {background: #fff !important;border: 1px solid #005596 !important;color: #005596 !important;font-size: 1.2rem !important;}</style>  <!-- OneTrust Cookies Consent Notice start -->
+    <script defer="" src="./pozopoa_files/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="849952d3-4c7b-414f-b39e-2ca23eb9953e"></script>
+    <script type="text/javascript">
+    var fls_onetrust_optanon_wrapper_executed=0;
+    function OptanonWrapper() {
+        if (Drupal.settings.flsgcookieonepref != undefined && typeof signin_with_googlejs == "function") {
+            signin_with_googlejs();
+        }
+        if (window.OnetrustActiveGroups != undefined) {
+            if(window.OnetrustActiveGroups.indexOf("C0003") == -1) $(".google_button_placeholder_container .flsgcookieonepref-container").removeClass("display-none");
+        }
+        fls_onetrust_optanon_wrapper_executed=1;
+        setTimeout(function(){fls_process_dataLayer_events();}, 1500);
+        if (Drupal.settings.optanon_cookies_settings_us) {
+            if ($("#onetrust-banner-sdk").length == 0 && $.cookie("OptanonAlertBoxClosed") == null) {
+                $("#ot-sdk-btn").hide();
+            }
+        }
+    }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->    
+    <script>
+    var dataLayer=dataLayer || [];
+    var dataLayerAfterLoad=dataLayerAfterLoad || [];
+    var dataLayerAfterOnetrustLoadedFlag = 0;
+    var dataLayerContainPurchase = 0;
+    var fls_process_dataLayer_events_count = 0;
+    function fls_process_dataLayer_events(){
+        fls_process_dataLayer_events_count++;
+        if (typeof dataLayer != 'undefined') {
+            var fls_ga4_debug = 0;
+            if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined' && typeof Drupal.settings.fls_ga4_debug != 'undefined') fls_ga4_debug = 1;
+            var onetrustLoaded = 0;
+            //var gtmLoaded = 0;
+            var pageTypeLoaded = 0;
+            for (var i in dataLayer) {
+                if (typeof dataLayer[i]['event'] != 'undefined') {
+                    if (dataLayer[i]['event'] == 'OneTrustLoaded') onetrustLoaded = 1;
+                    //if (dataLayer[i]['event'] == 'gtm.load') gtmLoaded = 1;
+                }
+                if (typeof dataLayer[i]['pageType'] != 'undefined' && typeof dataLayer[i]['userCategory'] != 'undefined') {
+                    pageTypeLoaded = 1;
+                }
+            }
+            if (!onetrustLoaded) {
+                if (fls_ga4_debug) {
+                    console.log('retry fls_process_dataLayer_events');
+                }
+                setTimeout(function(){fls_process_dataLayer_events()}, 500);
+                return false;
+            }
+            
+            dataLayerAfterOnetrustLoadedFlag = 1;
+            if (typeof dataLayerAfterLoad != 'undefined' && dataLayerAfterLoad.length > 0) {
+                for (var j in dataLayerAfterLoad) {
+                    fls_ga4_dataLayer_push(dataLayerAfterLoad[j]);
+                    if (typeof dataLayerAfterLoad[j]['event'] != 'undefined' && dataLayerAfterLoad[j]['event'] == 'purchase') {
+                        dataLayerContainPurchase = 1;
+                    }
+                }
+                dataLayerAfterLoad = [];
+                if (dataLayerContainPurchase) fls_ga4_purchase_debug_send_ajax(dataLayer, [], dataLayerAfterLoad, ' dataLayerAfterQueueProcessed');
+            }
+        }
+    }
+    function gtag(){dataLayer.push(arguments);}
+    
+    gtag('config', 'AW-1070114611');    
+    function fls_ga4_dataLayer_push(dataObj){
+        if (!dataLayerAfterOnetrustLoadedFlag && typeof dataObj['pageType'] == 'undefined') {
+            dataLayerAfterLoad.push(dataObj);
+            return false;
+        }
+        var fls_ga4_debug = 0;
+        if (typeof Drupal != 'undefined' && typeof Drupal.settings != 'undefined' && typeof Drupal.settings.fls_ga4_debug != 'undefined') fls_ga4_debug = 1;
+        if (fls_ga4_debug) {
+            console.log('dataLayer before push:');
+            console.log(JSON.stringify(dataLayer));
+            localStorage.setItem('ga4_debug_datalayer_before_push', JSON.stringify(dataLayer));
+        }
+        dataLayer.push(dataObj);
+        if (fls_ga4_debug) {
+            console.log('dataLayer after push:');
+            localStorage.setItem('ga4_debug_datalayer_after_push', JSON.stringify(dataLayer));
+            console.log(JSON.stringify(dataLayer));
+        }
+    } </script>    
+    <script type="text/javascript">
+    fls_ga4_dataLayer_push({
+"pageType": "myprojects" ,
+"pageName":"Logo Maker",
+"userStatus"  :  "Logged-in",
+"userId": "730069503",
+"userCategory" : "New User","splits" : []
+}); </script>
+<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K8BR3LM');</script>
+    <!-- End Google Tag Manager -->     
+<script type="text/plain" class="optanon-category-C0002">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "gs4vvjitir");
+</script>
+     
+    
+                                <meta name="robots" content="noindex, nofollow">
+            
+    <meta name="google-site-verification" content="c0Z9wtkaNliq5901gQv-T1xprOsMJF-IqwbBtBx28Ow">
+    <title>Logo Maker</title>
+    <link rel="preload" href="https://www.logomaker.com/sites/all/themes/freelogoservices/Material-Icons-Regularv5.woff2" crossorigin="anonymous" as="font" type="font/woff2">
+    <meta property="og:title" content="Logo Maker">
+    <meta property="og:image" content="https://assets.logomaker.com/sites/all/themes/logomaker/images/2021-LogoMaker-Site-Logo.png">
+
+
+    
+
+
+    <link type="text/css" rel="stylesheet" media="all" href="./pozopoa_files/css_b2f744b4a44351684aef9a1f7f2a189d.css">
+<link type="text/css" rel="stylesheet" media="" href="./pozopoa_files/css_e286d9736f86a6eb0867897b68124c49.css">
+<link type="text/css" rel="stylesheet" media="print" href="./pozopoa_files/css_5498ec5ebe892da91912db0617c5d986.css">
+<link type="text/css" rel="stylesheet" media="" href="./pozopoa_files/jquery-ui.1.12.1.min.css">
+        <!--[if IE 6]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/freelogoservices/fix-ie6.css" />    <![endif]-->
+    <!--[if IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/freelogoservices/fix-ie7.css" />    <![endif]-->
+    <!--[if IE 8]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/freelogoservices/fix-ie8.css" />    <![endif]-->
+    <!--[if IE 9]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/freelogoservices/fix-ie9.css" />    <![endif]-->
+    <script type="text/javascript" src="./pozopoa_files/js_066201e4424ff3e7eeccaffe5cc2e679.jsmin.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "block_edit": { "hover_links": 0 }, "thickbox": { "close": "Close X", "next": "Next \u003e", "prev": "\u003c Prev", "esc_key": "or Esc Key", "next_close": "Next / Close on last", "image_count": "Image !current of !total" }, "pgtmstmp": "jXyjjlJDLpJM8GqseQnihA==", "is_flstheme": true, "lightbox_loading_text": "Loading", "STOREID": 5, "fls_device_type": null, "current_currency_code": "USD", "current_country_code": "KE", "optanon_cookies_settings_us": 1, "apparel_product_list": [ 580, 588, 587, 584, 582, 589, 585, 20, 590, 595, 596, 598 ], "leave_page_message": "You have attempted to exit this page. The design you are working on will be lost. Are you sure you want to lose your design?", "leave_page_message_step4": "You have attempted to exit this page. The design you see on this page will not be saved unless you create an account. Are you sure you lose your design?", "google_client_id": "", "ga_status": 1, "please_fill_in": "Please fill out this field", "fls_ga4_data": { "userId": "730069503", "userStatus": "Logged-in", "userCategory": "New User", "currencyCode": "USD" }, "default_domain_product": 463, "popunder_flash_object_location": "https://www.logomaker.com/sites/default/modules/step4/popunder_js.swf", "popunder_close_location": "https%3A%2F%2Fwww.logomaker.com%2Fstep4%3Fclose%3D1", "lang": "", "baseUrl": "https://www.logomaker.com", "snapengage_init_name": "herbert.kipkemoi@student.moringaschool.com", "snapengage_init_data": { "initDropdown": "I need help with:", "questions": { "Select Your Problem": "Select Your Problem", "Logo - Changes to my Logo": "Logo - Changes to my Logo", "Logo - Purchase Receipt": "Logo - Purchase Receipt", "Logo - Trouble Purchasing": "Logo - Trouble Purchasing", "Logo - My Password": "Logo - My Password", "Logo - Problem with Logo Design Tool": "Logo - Problem with Logo Design Tool", "Logo - Problem with Site": "Logo - Problem with Site", "Logo - Copyright/Trademark": "Logo - Copyright/Trademark", "Logo - Logo Files": "Logo - Logo Files", "Logo - Unsubscribe from Emails": "Logo - Unsubscribe from Emails", "Logo - Can’t Download Files": "Logo - Can’t Download Files", "Logo - Facebook/Twitter Files": "Logo - Facebook/Twitter Files", "Logo - Other": "Logo - Other", "Business Card - Changes to my Business Card": "Business Card - Changes to my Business Card", "Business Card - Purchase Receipt": "Business Card - Purchase Receipt", "Business Card - Trouble Purchasing": "Business Card - Trouble Purchasing", "Business Card - My Password": "Business Card - My Password", "Business Card - Delivery Status": "Business Card - Delivery Status", "Business Card - Problem with Business Card Design Tool": "Business Card - Problem with Business Card Design Tool", "Business Card - Problem with Site": "Business Card - Problem with Site", "Business Card - Business Card Files": "Business Card - Business Card Files", "Business Card - Unsubscribe from Emails": "Business Card - Unsubscribe from Emails", "Business Card - Can’t Download Files": "Business Card - Can’t Download Files", "Business Card - Other": "Business Card - Other" }, "language_code": "", "page_is_contact_us": false }, "notallowedIDs": [  ], "notallowedCountriesEN": [  ], "fls_path": "myprojects", "popunder_url": "https://www.logomaker.com/step4?offer=1", "browser_details_name": "chrome", "show_loading_bar": 1, "continue_to_cart_url": "/checkout", "email_signature_product_id": 599, "cartapi_addtocart_uri": "/addtocart", "submit_email_signature_url": "/submit-email-signature", "logo_id": 0, "email_signature_def_name": "First, Last Name", "email_signature_def_job": "Job Title", "email_signature_def_phone": "Phone Number", "email_signature_def_email": "Email", "email_signature_def_website": "Website", "step2_texttojs": { "text2": "Please wait..." }, "homereturn_max_slide_nr": 1, "homereturn_current_slide_nr": 1, "fls_ga4_promoimpressions_list": { "black_friday": { "name": "Black Friday", "creative": "banner1" }, "cyber_monday": { "name": "Cyber Monday", "creative": "banner3" }, "shop_holiday_cards": { "name": "Shop Holiday Cards", "creative": "banner3" }, "work_with_designer": { "name": "Work with a designer", "creative": "banner4" }, "create_website": { "name": "Create a website", "creative": "banner5" } }, "lmx_blck_cyber_active_offer": "", "lmx_black_friday_deadline": 0 });
+//--><!]]>
+</script>
+    <link rel="icon" type="image/png" href="https://assets.logomaker.com/sites/all/themes/logomaker/images/2021_logomaker_site_favicon_74e_icon.ico"><link type="text/css" rel="stylesheet" media="all" href="./pozopoa_files/wl_logomaker_1709545506.css">    <script type="text/javascript">
+        <!--
+        function MM_swapImgRestore() { //v3.0
+            var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+            var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+                var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+                d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+            if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+            for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+            if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+                if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+        function loadImages()
+        {
+            
+        }
+        //-->
+    </script>
+
+
+
+    
+
+            <script type="text/plain" class="optanon-category-C0004" src="./pozopoa_files/49809.js" defer="defer"></script>
+    
+ 
+    <meta name="google-adsense-account" content="ca-pub-6697163079746865">
+     
+<script src="./pozopoa_files/otBannerSdk.js" async="" type="text/javascript"></script></head>
+<body class="page-site-5 body-theme-flat page-country-KE page-lang-en page-country-lang-KE-en page-body-myprojects page-body-mylogos page-body-myprojects-en page-body-mylogos-en window_size_desktop" data-new-gr-c-s-check-loaded="14.1162.0" data-gr-ext-installed="">
+    <!-- Google Tag Manager (noscript) -->
+             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8BR3LM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->    
+
+
+<nav class="navbar whitelabel_custom_header whitelabel_custom_old_header" style="margin-bottom:0px" id="custom_header_fls_header2">
+    <div class="container-fluid">
+                                    <div class="loggedin-navbar-wrapper">
+                    <div class="loggedin-navbar-container">
+                        <ul class="navbar-nav-loggedin-items">
+                                                        <li class="nav-item nav-item-my-projects position-relative mobile-hide">
+                                <a class="color_light_alt_hover_text nav-link font-size-14" aria-current="page" href="https://www.logomaker.com/myprojects"><span class="material-icons padding-right-10 font-size-20 vertical-align-middle">brush</span>My Projects                                    (<span>1</span>)</a>
+                                <ul class="navbar-nav-submenu position-absolute">
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/myprojects" value="View All Projects">View All Projects</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/get-started" value="Make a Logo">Make a Logo</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/website-builder" value="Make Your Website">Make Your Website</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/google-apps" value="Setup Your Email">Setup Your Email</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/domain-name-search" value="Choose Your Domain">Choose Your Domain</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/business-cards/step2" value="Order Business Cards" fls_ga4_designaproduct_selectors="0">Order Business Cards</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/promotional-products" value="Order Promo Products">Order Promo Products</a>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                            <li class="nav-item nav-item-my-account position-relative desktop-show tablet-hide">
+                                <a href="https://www.logomaker.com/my_account" class="color_light_alt_hover_text nav-link display-block">
+                                    <span class="material-icons font-size-20 vertical-align-top">account_circle</span>
+                                </a>
+                                <ul class="navbar-nav-submenu position-absolute">
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/my_account" value="My Account Info">My Account Info</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/my_account/order_history" value="My Orders &amp; Shipping">My Orders &amp; Shipping</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/my_account/recurring_payments" value="My Subscriptions">My Subscriptions</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/faq/" value="Help">Help</a>
+                                        </li>
+                                                                            <li>
+                                            <a class="dropdown-item font-size-14" href="https://www.logomaker.com/logout" value="Log Out">Log Out</a>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                            <li class="nav-item nav-item-shopping-cart">
+                                <a href="https://www.logomaker.com/checkout" class="color_light_alt_hover_text font-size-14 color_primary_main_text_hover"><span class="material-icons font-size-20 vertical-align-top">shopping_cart</span> (<span>0</span>)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                            <div class="navbar-nav-items-wrapper">
+            <div class="navbar-nav-items-container">
+                <a class="navbar-brand" href="https://www.logomaker.com/home-return">
+                    <img src="./pozopoa_files/LogoMaker-White-Icon.svg" width="24" height="24" alt="icon for the Logo Maker brand">
+                </a>
+                <a class="navbar-brand-second" href="https://www.logomaker.com/home-return">
+                    <picture>
+                        <source srcset="https://assets.logomaker.com/sites/all/themes/logomaker/images/2021-LogoMaker-Site-Logo_WHITE.webp" type="image/webp">
+                        <source srcset="https://assets.logomaker.com/sites/all/themes/logomaker/images/2021-LogoMaker-Site-Logo_WHITE.png" type="image/png">
+                        <img src="./pozopoa_files/2021-LogoMaker-Site-Logo_WHITE.png" width="123" height="24" class="max-width-100 height-auto" alt="logo for the Logo Maker brand">
+                    </picture>
+                </a>
+                <div class="navbar-nav-items-tablet-and-mobile-wrapper desktop-hide tablet-show">
+                    <ul class="navbar-nav-items-tablet-and-mobile">
+                        <li class="nav-item nav-item-my-account position-relative cursor-default">
+                            <div class="color_light_alt_hover_text nav-link">
+                                <span class="material-icons font-size-24 font-size-mobile-20 vertical-align-middle">account_circle</span>
+                            </div>
+                            <ul class="navbar-nav-submenu position-absolute">
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14" href="https://www.logomaker.com/my_account" value="My Account Info">My Account Info</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14" href="https://www.logomaker.com/my_account/order_history" value="My Orders &amp; Shipping">My Orders &amp; Shipping</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14" href="https://www.logomaker.com/my_account/recurring_payments" value="My Subscriptions">My Subscriptions</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14" href="https://www.logomaker.com/faq/" value="Help">Help</a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14" href="https://www.logomaker.com/logout" value="Log Out">Log Out</a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-toggler position-relative cursor-default">
+                            <div class="nav-item-toggler-button color_light_alt_hover_text nav-link">
+                                <span class="nav-item-toggler-icon material-icons font-size-24 font-size-mobile-20 vertical-align-middle">menu</span>
+                            </div>
+                            <ul class="navbar-nav-submenu-toggler position-absolute">
+            <li class="navbar-nav-submenu-toggler-item-level-1 navbar-nav-submenu-toggler-item-level-1-logged-in">
+            <span class="material-icons navbar-nav-has-submenu-icon font-size-20">brush</span>
+            <a class="my-projects-dropdown-item dropdown-item font-size-16" href="https://www.logomaker.com/myprojects">My Projects</a>
+        </li>
+       <li class="navbar-nav-submenu-toggler-item-level-1  navbar-nav-submenu-toggler-item-level-1-logged-in">
+            <span class="material-icons navbar-nav-has-submenu-icon font-size-20">laptop</span>
+            <a class="my-websites-dropdown-item dropdown-item font-size-16" href="https://www.logomaker.com/myprojects">My Websites</a>
+        </li>
+                                    <li class="navbar-nav-submenu-toggler-item-level-1 navbar-nav-has-submenu">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/myprojects#" title="Logos">Logos                                            <span class="material-icons navbar-nav-has-submenu-icon vertical-align-middle position-absolute position-right-0">expand_more</span>
+                                    </a>
+                                    <ul class="navbar-nav-submenu-toggler-container-level-2 padding-5 padding-top">
+                                                                                                                <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/get-started" title="Create a Logo">Create a Logo</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/how-it-works/" title="How it Works">How it Works</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/sample-logos/" title="Sample logo designs by industry">Sample logo designs by industry</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/work-with-a-designer/" title="Logo Design Services">Logo Design Services</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/free-logo-upload" title="Upload a Logo">Upload a Logo</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/black-friday-deals" title="Black Friday">Black Friday</a>
+                                </li>
+                                                                        </ul>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 navbar-nav-has-submenu">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/myprojects#" title="Business Cards">Business Cards                                            <span class="material-icons navbar-nav-has-submenu-icon vertical-align-middle position-absolute position-right-0">expand_more</span>
+                                    </a>
+                                    <ul class="navbar-nav-submenu-toggler-container-level-2 padding-5 padding-top">
+                                                                                                                <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/products/business-cards" title="Business Card Maker">Business Card Maker</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/business-cards/step2" title="Business Card Templates" fls_ga4_designaproduct_selectors="0">Business Card Templates</a>
+                                </li>
+                                                                        </ul>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 navbar-nav-has-submenu">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/myprojects#" title="Websites">Websites                                            <span class="material-icons navbar-nav-has-submenu-icon vertical-align-middle position-absolute position-right-0">expand_more</span>
+                                    </a>
+                                    <ul class="navbar-nav-submenu-toggler-container-level-2 padding-5 padding-top">
+                                                                                                                <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/website-builder" title="DIY Website Builder">DIY Website Builder</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/google-apps" title="Google Workspace">Google Workspace</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/local-business-listings" title="Online Business Listings">Online Business Listings</a>
+                                </li>
+                                                                                                                                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                                    <a class="dropdown-item font-size-14" href="https://www.logomaker.com/domain-name-search" title="Domains">Domains</a>
+                                </li>
+                                                                        </ul>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 ">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/about-us/" title="About Us">About Us                                    </a>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 ">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/blog/" title="Blog">Blog                                    </a>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 ">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/checkout" title="My Cart">My Cart                                    </a>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 ">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/myprojects" title="My Projects">My Projects                                    </a>
+                            </li>
+                                        <li class="navbar-nav-submenu-toggler-item-level-1 ">
+                <a class="dropdown-item font-size-16" href="https://www.logomaker.com/my_account" title="My Account">My Account                                    </a>
+                            </li>
+                <li class="navbar-nav-submenu-toggler-item-level-1 navbar-nav-has-submenu">
+        <a href="https://www.logomaker.com/" class="dropdown-item font-size-16">Language (EN)
+            <span class="material-icons navbar-nav-has-submenu-icon vertical-align-middle position-absolute position-right-0">expand_more</span>
+        </a>
+        <ul class="navbar-nav-submenu-toggler-container-level-2 padding-5 padding-top">
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/?change_lang=en" value="English">English (EN)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle current-menu-language-active">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/pt/?change_lang=pt-pt" value="Português">Português (PT)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/de/?change_lang=de" value="Deutsch">Deutsch (DE)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/fr/?change_lang=fr" value="Français">Français (FR)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/es/?change_lang=es" value="Español">Español (ES)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/nl/?change_lang=nl" value="Nederland">Nederland (NL)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/it/?change_lang=it" value="Italiano">Italiano (IT)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                            <li class="navbar-nav-submenu-toggler-item-level-2">
+                    <a class="dropdown-item language-dropdown-item-level-2 font-size-14 position-relative" href="https://www.logomaker.com/tr?change_lang=tr" value="Türkçe">Türkçe (TR)                     <span class="color_primary_main_text material-icons font-size-20 current-menu-language position-absolute position-y-middle ">done</span>
+                    </a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse tablet-hide">
+                                            
+
+<ul class="navbar-nav"> <li class="nav-item position-relative"><a class="color_light_alt_hover_text nav-link font-size-14" href="https://www.logomaker.com/logo-design/" title="Logos">Logos</a><ul class="navbar-nav-submenu position-absolute"><li><a class="dropdown-item font-size-14" rel="209" href="https://www.logomaker.com/get-started" title="Create a Logo">Create a Logo</a></li><li><a class="dropdown-item font-size-14" rel="119" href="https://www.logomaker.com/how-it-works/" title="How it Works">How it Works</a></li><li><a class="dropdown-item font-size-14" rel="146" href="https://www.logomaker.com/sample-logos/" title="Sample logo designs by industry">Sample logo designs by industry</a></li><li><a class="dropdown-item font-size-14" rel="121" href="https://www.logomaker.com/free-logo-upload" title="Upload a Logo">Upload a Logo</a></li><li><a class="dropdown-item font-size-14" rel="233" href="https://www.logomaker.com/black-friday-deals" title="Black Friday">Black Friday</a></li></ul></li> <li class="nav-item position-relative"><a class="color_light_alt_hover_text nav-link font-size-14" href="https://www.logomaker.com/website-builder" title="Websites">Websites</a><ul class="navbar-nav-submenu position-absolute"><li><a class="dropdown-item font-size-14" rel="139" href="https://www.logomaker.com/website-builder" title="DIY Website Builder">DIY Website Builder</a></li><li><a class="dropdown-item font-size-14" rel="140" href="https://www.logomaker.com/google-apps" title="Google Workspace">Google Workspace</a></li><li><a class="dropdown-item font-size-14" rel="141" href="https://www.logomaker.com/local-business-listings" title="Online Business Listings">Online Business Listings</a></li><li><a class="dropdown-item font-size-14" rel="142" href="https://www.logomaker.com/domain-name-search" title="Domains">Domains</a></li></ul></li> <li class="nav-item position-relative"><a class="color_light_alt_hover_text nav-link font-size-14" href="https://www.logomaker.com/products/business-cards" title="Business Cards">Business Cards</a><ul class="navbar-nav-submenu position-absolute"><li><a class="dropdown-item font-size-14" rel="123" href="https://www.logomaker.com/products/business-cards" title="Business Card Maker">Business Card Maker</a></li><li><a class="dropdown-item font-size-14" rel="124" href="https://www.logomaker.com/business-cards/step2" title="Business Card Templates" fls_ga4_designaproduct_selectors="0">Business Card Templates</a></li></ul></li> <li class="nav-item position-relative"><a class="color_light_alt_hover_text nav-link font-size-14" href="https://www.logomaker.com/about-us/" title="About Us">About Us</a></li> <li class="nav-item position-relative"><a class="color_light_alt_hover_text nav-link font-size-14" href="https://www.logomaker.com/blog/" title="Blog">Blog</a></li></ul>
+
+                                        <ul class="navbar-nav-right-items">
+                        <li class="nav-item nav-item-languages-list position-relative">
+                            <a href="https://www.logomaker.com/" class="color_light_alt_hover_text nav-link font-size-14">EN                                <span class="material-icons font-size-20" style="vertical-align: bottom;">expand_more</span>
+                            </a>
+                            <ul class="navbar-nav-submenu position-absolute">
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/?change_lang=en" value="English">English (EN)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle current-menu-language-active">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/pt/?change_lang=pt-pt" value="Português">Português (PT)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/de/?change_lang=de" value="Deutsch">Deutsch (DE)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/fr/?change_lang=fr" value="Français">Français (FR)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/es/?change_lang=es" value="Español">Español (ES)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/nl/?change_lang=nl" value="Nederland">Nederland (NL)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/it/?change_lang=it" value="Italiano">Italiano (IT)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="dropdown-item font-size-14 position-relative" href="https://www.logomaker.com/tr?change_lang=tr" value="Türkçe">Türkçe (TR)                                            <span class="color_primary_main_text material-icons font-size-14 current-menu-language vertical-align-middle ">done</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+<style>
+    .navbar.whitelabel_custom_header {
+        position: relative;
+        z-index: 3;
+    }
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: inherit;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+    }
+
+    .loggedin-navbar-wrapper {
+        background: #474065;
+        z-index: 3;
+    }
+
+    .loggedin-navbar-container {
+        align-self: flex-end;
+        box-sizing: border-box;
+        min-height: 4.8rem;
+        padding-right: 2rem;
+        width: 100%
+    }
+
+    .window_size_tablet ..loggedin-navbar-container {
+        padding-right: 1.3rem;
+    }
+
+    .window_size_mobile .loggedin-navbar-container {
+        padding-right: 0.2rem
+    }
+
+    .navbar-nav-right-items {
+        padding-right: 2rem !important;
+    }
+
+    .navbar-nav-loggedin-items, .navbar-nav-right-items, .navbar-nav-items-tablet-and-mobile-wrapper {
+        margin-left: auto !important;
+    }
+
+    .navbar-nav-loggedin-items .nav-item a {
+        display: block;
+        padding: 1.4rem 1.2rem;
+    }
+
+    .navbar-nav-loggedin-items, .navbar-nav, .navbar-nav-right-items, .navbar-nav-items-tablet-and-mobile {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-nav {
+        align-items: center;
+        margin-right: auto !important;
+    }
+
+    .navbar-nav-items-wrapper {
+        background-color: #615A80;
+        z-index: 2;
+    }
+
+    @media (min-width: 1536px) {
+        .loggedin-navbar-container, .navbar-nav-items-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1362px;
+            max-width: 100%;
+        }
+    }
+
+    .navbar-nav-items-container {
+        align-items: center;
+        background-color: #615A80;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: inherit;
+        justify-content: space-between;
+    }
+
+    .navbar-nav-items-tablet-and-mobile .nav-item {
+        padding: 2.4rem 2.5rem;
+    }
+
+    .window_size_mobile .navbar-nav-items-tablet-and-mobile .nav-item {
+        padding: 1rem 1.1rem;
+    }
+
+    .navbar-brand {
+        background-color: #FF8F00;
+        min-height: 7.2rem;
+        min-width: 7.2rem;
+        position: relative;
+    }
+
+    .window_size_mobile .navbar-brand {
+        min-height: 4rem;
+        min-width: 4rem;
+    }
+
+    .navbar-brand IMG {
+        display: block;
+        position: absolute;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .navbar-brand-second {
+        padding: 0 2rem 0 2.4rem;
+    }
+
+    .window_size_mobile .navbar-brand-second {
+        padding: 0 3.2rem 0 0.8rem;
+    }
+
+    .navbar-collapse, .loggedin-navbar-container {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .navbar-nav .nav-item > a, .navbar-nav-right-items .nav-item > a {
+        display: block;
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    }
+
+    .navbar-nav .nav-item:hover, .nav-item.nav-item-my-websites:hover, .nav-item.nav-item-my-projects:hover, .nav-item.nav-item-my-account:hover,
+    .navbar-nav-right-items .nav-item.nav-item-languages-list:hover, .nav-item-toggler-active {
+        background-color: #85809D;
+        transition: all 0.3s ease-out;
+    }
+
+    .navbar-nav-submenu {
+        display: none;
+        background: #FFF;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 0px 3px 6px #00000029;
+        padding-bottom: 1rem;
+        top: 100%;
+        min-width: 225px;
+        z-index: 1;
+    }
+
+    .nav-item-languages-list .navbar-nav-submenu {
+        min-width: 155px;
+    }
+
+    .navbar-nav-submenu-toggler {
+        display: none;
+        background: #FFF;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 0px 3px 6px #00000029;
+        padding-bottom: 1rem;
+        top: 100%;
+        min-width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-nav-submenu-toggler-container-level-2 {
+        display: none;
+    }
+
+    .navbar-nav .nav-item:hover > .navbar-nav-submenu, .navbar-nav-loggedin-items .nav-item:hover > .navbar-nav-submenu,
+    .navbar-nav-right-items .nav-item:hover > .navbar-nav-submenu, .navbar-nav-items-container .nav-item:hover > .navbar-nav-submenu,
+    .nav-item-toggler-active .navbar-nav-submenu-toggler, .navbar-nav-has-submenu.open .navbar-nav-submenu-toggler-container-level-2 {
+        display: block;
+    }
+
+    .navbar-nav-items-container .navbar-nav-submenu {
+        left: 0;
+    }
+
+    .navbar-nav-loggedin-items .navbar-nav-submenu, .navbar-nav-right-items .navbar-nav-submenu,
+    .window_size_tablet .navbar-nav-items-container .navbar-nav-submenu, .window_size_mobile .navbar-nav-items-container .navbar-nav-submenu,
+    .nav-item-toggler .navbar-nav-submenu-toggler {
+        right: 0;
+        left: unset;
+    }
+
+    .navbar-nav-submenu > li {
+        position: relative;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .navbar-nav-submenu > li > a, .navbar-nav-submenu-toggler > li > a {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-nav .navbar-nav-submenu > li > a{
+        padding: 1rem 1.2rem;
+    }
+
+    @media (min-width: 960px){
+        .navbar-nav-submenu > li:hover, .navbar-nav-submenu-toggler-container-level-2 > li:hover .dropdown-item {
+            background: #85809D;
+            transition: all 0.3s ease-out;
+        }
+    }
+
+    .whitelabel_custom_old_header .navbar-nav-loggedin-items .nav-link:hover {
+        color: #FFF;
+    }
+
+    .navbar-nav-submenu .dropdown-item, .navbar-nav-submenu-toggler .dropdown-item {
+        color: #222;
+        box-sizing: border-box;
+        display: inline-block;
+        font-weight: 500;
+        padding: 1rem 1.2rem;
+        white-space: nowrap;
+    }
+
+    .navbar-nav-submenu-toggler-item-level-1-logged-in {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav-submenu-toggler-item-level-1-logged-in .navbar-nav-has-submenu-icon {
+        padding: 1rem 0 1rem 1.2rem;
+    }
+
+    @media (min-width: 960px) {
+        .navbar-nav-submenu > li:hover .dropdown-item,
+        .navbar-nav-submenu-toggler-container-level-2 > li:hover .dropdown-item {
+            color: #FFF;
+        }
+    }
+
+    .navbar-nav-submenu-toggler-container-level-2 .dropdown-item {
+        padding: 1rem 0 1rem 1.2rem;
+        min-width: 168px;
+    }
+
+    .my-projects-dropdown-item, .my-websites-dropdown-item {
+        padding-left: 3rem;
+    }
+
+    .navbar-nav-submenu-container > li {
+        padding: 0 0 1.6rem 1.6rem;
+    }
+
+    .nav-item-toggler .navbar-nav-submenu-toggler {
+        padding: 1rem 4.8rem 1rem 1.2rem;
+    }
+
+    .window_size_tablet .nav-item-toggler .navbar-nav-submenu-toggler {
+        min-width: 320px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .window_size_mobile .nav-item-toggler .navbar-nav-submenu-toggler {
+        width: calc(100vw - 60px);
+        border-radius: 0;
+    }
+
+
+    .nav-item-toggler .navbar-nav-submenu-toggler > li {
+        padding: 1rem 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .nav-item-toggler .navbar-nav-submenu-toggler > li.open {
+        padding: 1rem 0 0 0;
+    }
+
+    .navbar-collapse, .loggedin-navbar-container {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .current-menu-language {
+        display: none;
+    }
+
+    .current-menu-language.current-menu-language-active {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .padding-right-10 {
+        padding-right: 1rem;
+    }
+
+    /*    Old Pages*/
+    .whitelabel_custom_old_header a {text-decoration: none;}
+    .navbar-collapse a:hover {color: #FFF!important;}
+
+    .breadcrumb_nav {
+        background-color: #474065;
+    }
+
+    .whitelabel_custom_old_header ol, .whitelabel_custom_old_header ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .progress_bar_navigation .progress_bar_element .progress_number span {
+        background-color: #44D8BB !important;
+        color: #222 !important;
+    }
+    .progress_bar_navigation .progress_bar_element:before {
+        background-color: #44D8BB !important;
+    }
+    .whitelabel_custom_old_header .wl_header_topbar_right .step {
+        color: #FFF;
+        opacity: 0.8;
+    }
+    .whitelabel_custom_old_header .wl_header_topbar_right .step.active {
+        font-weight: bold;
+        opacity: 1;
+    }
+</style>
+<script type="text/plain" class="">
+    $(document).ready(function () {
+        menu_toggler();
+        show_hide_nav_submenu();
+    });
+    function menu_toggler() {
+        $(".nav-item-toggler-button").on("click", function (event) {
+            event.preventDefault();
+            var parent = $(this).parent();
+            if (parent.hasClass('nav-item-toggler-active')) {
+                parent.removeClass('nav-item-toggler-active');
+                $('.nav-item-my-account, .nav-item-my-projects').css('pointer-events', 'auto');
+                $('.nav-item-toggler-icon').text('menu');
+            } else {
+                parent.addClass('nav-item-toggler-active');
+                $('.nav-item-my-account, .nav-item-my-projects').css('pointer-events', 'none');
+                $('.nav-item-toggler-icon').text('close');
+            }
+        });
+    }
+    function show_hide_nav_submenu() {
+        $(".navbar-nav-has-submenu > a").click(function (event) {
+            event.preventDefault();
+            var parent = $(this).parent();
+            var selectedNavItem = $(this);
+            if (parent.hasClass('open')) {
+                parent.removeClass('open').find('.navbar-nav-has-submenu-icon').text('expand_more');
+                selectedNavItem.removeClass('font-bold');
+            } else {
+                $('.navbar-nav-has-submenu.open').removeClass('open').find('.navbar-nav-has-submenu-icon').text('expand_more').end().find('.dropdown-item').removeClass('font-bold');
+                parent.addClass('open').find('.navbar-nav-has-submenu-icon').text('expand_less');
+                selectedNavItem.addClass('font-bold');
+            }
+        });
+    }
+</script>
+
+
+<div class="wl_page max-width-100" style="min-height: calc(100vh - 617px);">
+    <div id="whitelabels_home_return">
+    <div class="row wl_width_xl wl_width_xxl gutter-30 gutter-30-halfoutside tablet-gutter-30-halfotuside">
+        <div class="column twelve">
+            <h2 class="color_dgrey_main_text font-size-20 margin-30 margin-top padding-20 padding-bottom line-height-20">My Projects</h2>
+        </div>
+    </div>
+    <section class="my_products wl_width_xl wl_width_xxl gutter-30 gutter-30-halfoutside tablet-gutter-30-halfotuside mobile-hide">
+        <div class="row gutter-30 gutter-30-halfoutside tablet-gutter-30-halfotuside">
+            <div class="column nine my_items">
+                <div class="navigation_bar">
+                    <nav class="navigation_container">
+                                                    <a href="https://www.logomaker.com/myprojects#" class="nav_item nav_item_selected color_dgrey_main_text color_href_main_text" rel="logo">Logos</a>
+                                                    <a href="https://www.logomaker.com/myprojects#" class="nav_item color_dgrey_main_text opacity-06" rel="business-cards">Business Cards</a>
+                                                    <a href="https://www.logomaker.com/myprojects#" class="nav_item color_dgrey_main_text opacity-06" rel="websites">Domains/Email &amp; Websites</a>
+                                            </nav>
+                </div>
+                <div class="my_items_container" style="visibility: visible;">
+                                            <div class="row logo slick-initialized slick-slider" style="display: block;">
+                                                        
+                                                        
+                                                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 520px; transform: translate3d(0px, 0px, 0px);"><div class="item_logo item_np_en slick-slide slick-current slick-active" index="0" id="972141558" rel="" style="width: 235px;" tabindex="0" data-slick-index="0" aria-hidden="false">
+                                    <img class="" src="./pozopoa_files/1j+ojlxEOMkX9Wyqfhe43D6kh...GCrRNOnRvFwWJqZ1A2n3AM71E72vBm47hlc1xFtFwKhBUPdcU1jyB5">
+                                                                            <div class="star">
+                                            <span class="material-icons color_lgrey_main_hover_text color_primary_main_text_hover color_primary_main_hover_text">star</span>
+                                        </div>
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                    <div class="download_logo">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/checkout/972141558" tabindex="0">
+                                                        <span class=" color_primary_main_text color_primary_main_hover_text_hover color_primary_main_text_hover font-size-14">Buy Logo</span>
+                                                    </a>
+                                                </div>
+                                                                                                                                            <div class="download_logo">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/business-cards/step1?clid=972141558" fls_ga4_designaproduct_selectors="0" tabindex="0">
+                                                        <span class=" color_primary_main_text color_primary_main_hover_text_hover color_primary_main_text_hover font-size-14">Design Business Cards</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                            <div class="edit_logo_brush">
+                                                                                        <a class="color_lgrey_main_hover_text color_primary_main_text_hover " href="https://www.logomaker.com/step3/logo/972141558" tabindex="0"><span class="material-icons"> brush</span></a>
+                                                                                    </div>
+                                                                    </div><div class="item_logo item_np_en slick-slide slick-active" index="1" id="" rel="" style="width: 235px;" tabindex="0" data-slick-index="1" aria-hidden="false">
+                                    <img class="" src="./pozopoa_files/create_new_logo.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                    <div class="download_logo">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/get-started" tabindex="0">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Create a New Logo</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div></div></div></div>
+                                            <div class="row websites" style="display: none;">
+                                                        <div class="item_websites item_np_en" index="0" id="" rel="">
+                                    <img class="" src="./pozopoa_files/add_new_domain.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                        <div class="info_websites">
+                                                        <p class="color_dgrey_main_text color_primary_main_text_hover font-size-14"></p>
+                                                    </div>
+                                                                                                <div class="download_websites">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/website-builder">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Shop for a Website</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                        <div class="item_websites item_np_en" index="1" id="" rel="">
+                                    <img class="" src="./pozopoa_files/add_new_domain.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                        <div class="info_websites">
+                                                        <p class="color_dgrey_main_text color_primary_main_text_hover font-size-14"></p>
+                                                    </div>
+                                                                                                <div class="download_websites">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/domain-name-search">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Shop for a Domain</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                        <div class="item_websites item_np_en" index="2" id="" rel="">
+                                    <img class="" src="./pozopoa_files/buy_business_listing_bw.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                        <div class="info_websites">
+                                                        <p class="color_dgrey_main_text color_primary_main_text_hover font-size-14"></p>
+                                                    </div>
+                                                                                                <div class="download_websites">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/local-business-listings">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Buy Business Listing</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row business_listings" style="display: none;">
+                                                        <div class="item_business_listings item_np_en" index="0" id="" rel="">
+                                    <img class="" src="./pozopoa_files/buy_business_listing_bw.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                    <div class="download_business_listings">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/local-business-listings">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Buy Business Listing</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row email_signatures" style="display: none;">
+                                                    </div>
+                                            <div class="row business-cards" style="display: none;">
+                                                        <div class="item_business-cards item_np_en" index="0" id="" rel="">
+                                    <img class="" src="./pozopoa_files/create_new_bcards.svg">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                    <div class="download_business-cards">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/business-cards/step2" fls_ga4_designaproduct_selectors="0">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Create a New Business Card</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row products" style="display: none;">
+                                                        <div class="item_products item_np_en" index="0" id="" rel="">
+                                    <img class="" src="./pozopoa_files/add_new_pp.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                    <div class="download_products">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/promotional-products">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Browse Promo Products</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row domains" style="display: none;">
+                                                        <div class="item_domains item_np_en" index="0" id="" rel="">
+                                    <img class="" src="./pozopoa_files/add_new_domain.png">
+                                     
+                                                                            <h3 class="justify-center premium_packages"></h3>
+                                                                        <div class="links_container">
+                                                                                                                                                                                    <div class="download_domains">
+                                                                                                                                                            <h3></h3>
+                                                    <a href="https://www.logomaker.com/domain-name-search">
+                                                        <span class=" color_dgrey_main_text color_primary_main_text_hover font-size-14">Shop for a Domain</span>
+                                                    </a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                        <div id="custom_button" class="justify-right">
+                        <!--<span class="fullscreen material-icons color_dgrey_main_text vertical-align-middle">zoom_out_map</span>-->
+                        <span class="custom_prev material-icons color_lgrey_main_hover_text vertical-align-middle font-size-30">keyboard_arrow_left</span>
+                        <span class="custom_next material-icons vertical-align-middle margin-20 margin-right font-size-30 color_lgrey_main_hover_text">keyboard_arrow_right</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column three user_menu">
+                <div class="user_menu_container">
+                    <a href="https://www.logomaker.com/my_account" class="color_dgrey_main_text color_primary_main_text_hover user_menu_item">
+                        <span class="color_lgrey_main_hover_text material-icons font-size-17 margin-10 margin-right vertical-align-bottom">account_circle</span>My account</a>
+                    <a href="https://www.logomaker.com/my_account/order_history" class="color_dgrey_main_text color_primary_main_text_hover user_menu_item">
+                        <span class="color_lgrey_main_hover_text material-icons font-size-17 margin-10 margin-right vertical-align-bottom">receipt</span>Order <span class="oh_info_en"> History</span></a>
+                    <a href="https://www.logomaker.com/my_account/recurring_payments" class="color_dgrey_main_text color_primary_main_text_hover user_menu_item">
+                        <span class="color_lgrey_main_hover_text material-icons font-size-17 margin-10 margin-right vertical-align-bottom">payment</span>Recurring <span class="rp_info_en"> Payments</span></a>
+                    <a href="https://www.logomaker.com/p/faq" class="color_dgrey_main_text color_primary_main_text_hover user_menu_item">
+                        <span class="color_lgrey_main_hover_text material-icons font-size-17 margin-10 margin-right vertical-align-bottom">info_outline</span>Help</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--My Products Mobile-->
+    <section class="my_products_on_mobile desktop-hide mobile-show">
+        <div class="row gutter-30 gutter-30-halfoutside tablet-gutter-30-halfotuside">
+            <div class="column twelve my_products_on_mobile_wrapper">
+                <div class="mobile_navigation_bar">
+                    <nav class="mobile_navigation_container">
+                                                    <a href="https://www.logomaker.com/myprojects#" class="nav_item nav_item_selected color_dgrey_main_text color_href_main_text" rel="logo">Logos</a>
+                                                    <a href="https://www.logomaker.com/myprojects#" class="nav_item color_dgrey_main_text opacity-06" rel="business-cards">Business Cards</a>
+                                                    <a href="https://www.logomaker.com/myprojects#" class="nav_item color_dgrey_main_text opacity-06" rel="websites">Domains/Email &amp; Websites</a>
+                                            </nav>
+                </div>
+                <div class="my_items_container_mobile">
+                                            <div class="row logo justify-center">
+                                                        <div class="item_mobile_logo " index="0" id="972141558" rel="">
+                                                                            <div class="star justify-left">
+                                            <span class="material-icons color_lgrey_main_hover_text color_primary_main_text_hover color_primary_main_hover_text">star</span>
+                                        </div>
+                                                                        <img src="./pozopoa_files/1j+ojlxEOMkX9Wyqfhe43D6kh...GCrRNOnRvFwWJqZ1A2n3AM71E72vBm47hlc1xFtFwKhBUPdcU1jyB5">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                    <div class="download_mobile_logo">
+                                                    <a class="color_primary_main_text font-size-14" href="https://www.logomaker.com/checkout/972141558">Buy Logo</a>
+                                                </div>
+                                                                                                                                            <div class="download_mobile_logo">
+                                                    <a class="color_primary_main_text font-size-14" href="https://www.logomaker.com/business-cards/step1?clid=972141558" fls_ga4_designaproduct_selectors="0">Design Business Cards</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                            <div class="edit_logo_brush">
+                                                                                            <a class="color_lgrey_main_hover_text color_primary_main_text_hover " href="https://www.logomaker.com/step3/logo/972141558"><span class="material-icons"> brush</span></a>    
+                                                                                    </div>
+                                                                    </div>
+                                                        <div class="item_mobile_logo " index="1" id="" rel="">
+                                                                        <img src="./pozopoa_files/create_new_logo.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                    <div class="download_mobile_logo">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/get-started">Create a New Logo</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row websites justify-center">
+                                                        <div class="item_mobile_websites " index="0" id="" rel="">
+                                                                        <img src="./pozopoa_files/add_new_domain.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                        <div class="info_mobile_websites">
+                                                        <p class="color_dgrey_main_text color_primary_main_text_hover font-size-14"></p>
+                                                    </div>
+                                                                                                <div class="download_mobile_websites">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/website-builder">Shop for a Website</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                        <div class="item_mobile_websites " index="1" id="" rel="">
+                                                                        <img src="./pozopoa_files/add_new_domain.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                        <div class="info_mobile_websites">
+                                                        <p class="color_dgrey_main_text color_primary_main_text_hover font-size-14"></p>
+                                                    </div>
+                                                                                                <div class="download_mobile_websites">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/domain-name-search">Shop for a Domain</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                        <div class="item_mobile_websites " index="2" id="" rel="">
+                                                                        <img src="./pozopoa_files/buy_business_listing_bw.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                        <div class="info_mobile_websites">
+                                                        <p class="color_dgrey_main_text color_primary_main_text_hover font-size-14"></p>
+                                                    </div>
+                                                                                                <div class="download_mobile_websites">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/local-business-listings">Buy Business Listing</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row business_listings justify-center">
+                                                        <div class="item_mobile_business_listings " index="0" id="" rel="">
+                                                                        <img src="./pozopoa_files/buy_business_listing_bw.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                    <div class="download_mobile_business_listings">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/local-business-listings">Buy Business Listing</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row email_signatures justify-center">
+                                                    </div>
+                                            <div class="row business-cards justify-center">
+                                                        <div class="item_mobile_business-cards " index="0" id="" rel="">
+                                                                        <img src="./pozopoa_files/create_new_bcards.svg">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                    <div class="download_mobile_business-cards">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/business-cards/step2" fls_ga4_designaproduct_selectors="0">Create a New Business Card</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row products justify-center">
+                                                        <div class="item_mobile_products " index="0" id="" rel="">
+                                                                        <img src="./pozopoa_files/add_new_pp.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                    <div class="download_mobile_products">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/promotional-products">Browse Promo Products</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                            <div class="row domains justify-center">
+                                                        <div class="item_mobile_domains " index="0" id="" rel="">
+                                                                        <img src="./pozopoa_files/add_new_domain.png">
+                                                                            <h3 class="premium_packages"></h3>
+                                     
+                                    <div class="links_container">
+                                                                                                                                                                                    <div class="download_mobile_domains">
+                                                    <a class="color_dgrey_main_text font-size-14" href="https://www.logomaker.com/domain-name-search">Shop for a Domain</a>
+                                                </div>
+                                                                                                                        </div>
+                                                                    </div>
+                                                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="row slide_products">
+            <div class="column two pagination_item">
+                <span class="material-icons custom_prev vertical-align-middle font-size-30 color_lgrey_main_hover_text">keyboard_arrow_left</span>
+            </div>
+            <div class="column eight pagination_item justify-center">
+                <span class="font-size-14 color_dgrey_main_text vertical-align-sub">
+                    <span class="current_item" id="current_item">1 </span>of <span class="number_of_items" id="number_of_items">2</span>
+                </span>
+            </div>
+            <div class="column two justify-right pagination_item">
+                <span class="material-icons custom_next vertical-align-middle font-size-30 color_lgrey_main_hover_text">keyboard_arrow_right</span>
+
+            </div>
+        </div>
+    </section>
+    <section class="brand_progress wl_width_xl wl_width_xxl">
+        <div class="row gutter-30 gutter-30-halfoutside tablet-gutter-30-halfoutside">
+            <div class="column four mobile-twelve brand_progress_container same-height same-height-skip-mobile" data-same-height="progress" style="min-height: 401.828px;">
+                <h2 class="font-size-18 brand_progress_title">Brand Progress</h2>
+                                    <div class="row brand_progress_item">
+                        <div class="column nine tablet-eight vertical-align-middle position-relative padding-30 padding-left">
+                            <span class="position-absolute position-left-0 position-top-0 color_primary_main_text vertical-align-middle display-inlineblock material-icons vertical-align-middle font-size-22 color_lgrey_main_hover_text">check_circle</span>
+                            <span class="color_dgrey_main_text font-size-16 display-inlineblock vertical-align-middle">Logo</span>
+                        </div>
+                                                    <div class="column three tablet-four vertical-align-middle justify-right">
+                                <a href="https://www.logomaker.com/get-started" class="color_primary_main_text font-size-14 justify-right brand_progress_url">Add +</a>
+                            </div>
+                                             </div>
+                                    <div class="row brand_progress_item">
+                        <div class="column nine tablet-eight vertical-align-middle position-relative padding-30 padding-left">
+                            <span class="position-absolute position-left-0 position-top-0 color_primary_main_text vertical-align-middle display-inlineblock material-icons vertical-align-middle font-size-22 color_lgrey_main_hover_text">check_circle</span>
+                            <span class="color_dgrey_main_text font-size-16 display-inlineblock vertical-align-middle">Business Cards</span>
+                        </div>
+                                                    <div class="column three tablet-four vertical-align-middle justify-right">
+                                <a href="https://www.logomaker.com/business-cards/step2" class="color_primary_main_text font-size-14 justify-right brand_progress_url" fls_ga4_designaproduct_selectors="0">Add +</a>
+                            </div>
+                                             </div>
+                                    <div class="row brand_progress_item">
+                        <div class="column nine tablet-eight vertical-align-middle position-relative padding-30 padding-left">
+                            <span class="position-absolute position-left-0 position-top-0 color_primary_main_text vertical-align-middle display-inlineblock material-icons vertical-align-middle font-size-22 color_lgrey_main_hover_text">check_circle</span>
+                            <span class="color_dgrey_main_text font-size-16 display-inlineblock vertical-align-middle">Domains</span>
+                        </div>
+                                                    <div class="column three tablet-four vertical-align-middle justify-right">
+                                <a href="https://www.logomaker.com/domain-name-search" class="color_primary_main_text font-size-14 justify-right brand_progress_url">Add +</a>
+                            </div>
+                                             </div>
+                                    <div class="row brand_progress_item">
+                        <div class="column nine tablet-eight vertical-align-middle position-relative padding-30 padding-left">
+                            <span class="position-absolute position-left-0 position-top-0 color_primary_main_text vertical-align-middle display-inlineblock material-icons vertical-align-middle font-size-22 color_lgrey_main_hover_text">check_circle</span>
+                            <span class="color_dgrey_main_text font-size-16 display-inlineblock vertical-align-middle">Website</span>
+                        </div>
+                                                    <div class="column three tablet-four vertical-align-middle justify-right">
+                                <a href="https://www.logomaker.com/website-builder" class="color_primary_main_text font-size-14 justify-right brand_progress_url">Add +</a>
+                            </div>
+                                             </div>
+                                    <div class="row brand_progress_item">
+                        <div class="column nine tablet-eight vertical-align-middle position-relative padding-30 padding-left">
+                            <span class="position-absolute position-left-0 position-top-0 color_primary_main_text vertical-align-middle display-inlineblock material-icons vertical-align-middle font-size-22 color_lgrey_main_hover_text">check_circle</span>
+                            <span class="color_dgrey_main_text font-size-16 display-inlineblock vertical-align-middle">Business Listing</span>
+                        </div>
+                                                    <div class="column three tablet-four vertical-align-middle justify-right">
+                                <a href="https://www.logomaker.com/local-business-listings" class="color_primary_main_text font-size-14 justify-right brand_progress_url">Add +</a>
+                            </div>
+                                             </div>
+                            </div>
+            <div class="column eight mobile-twelve same-height same-height-skip-mobile" data-same-height="progress" style="min-height: 401.828px;">
+                <div class="row mobile-hide">
+                                                                <div class="row promo_hero_container margin-20 margin-bottom">
+                            <div class="column five promo_hero_content">
+                                <h1 class="color_light_alt_hover_text font-size-18 margin-15 margin-horizontal padding-20 padding-top font-italic">Welcome Back!</h1>
+                                <h2 class="color_light_alt_hover_text font-size-16 margin-15 margin-horizontal">- Let's build your brand</h2>
+                            </div>
+                            <div class="column seven promo_hero_img">
+                                <img class="width-100 active" src="./pozopoa_files/2017-Modular-Hero.jpg">
+                            </div>
+                        </div>
+                                    </div>
+                <div class="row gutter-30 gutter-30-halfoutside tablet-gutter-30-halfoutside" id="blog_feeds">
+                                            <div class="column six mobile-twelve">
+                            <a class="feed_item" href="https://www.freelogoservices.com/blog/2023/11/06/free-logo-services-ai-logo-creator-release/">
+                                <img src="./pozopoa_files/logomaker-ai-blog-release-585x292.jpg" alt="LogoMaker AI Logo Creator Release"><h2> FreeLogoServices AI Logo Creator: Make Custom AI Logos for Free </h2>
+                            </a>
+                        </div>
+                                            <div class="column six mobile-twelve">
+                            <a class="feed_item" href="https://www.freelogoservices.com/blog/2021/01/14/creative-font-ideas-for-logos/">
+                                <img src="./pozopoa_files/Creative-Font-Ideas-for-Logos_Image-585x300.jpg" alt="letter bocks"><h2> 10 Creative Font Ideas for Your Business Logo </h2>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="overlay revision_popup_overlay" style="display: none;"></div>
+<div class="thankYouBox revision_popup" style="display: none;">
+    <a class="closeBtn" href="https://www.logomaker.com/myprojects#" title="Close Window">X</a>
+    <div class="revision_popup_container">
+        <div class="popup_content">
+            <div class="row">
+                <div class="column twelve justify-center margin-15 margin-bottom">
+                    <h1 class="color_primary_main_text">IMPORTANT!</h1>
+                </div>
+                <div class="column twelve justify-center">
+                    <p class="font-size-18 title logo_title">You are about to make edits to your logo. All changes will be permanent and cannot be undone.</p>
+                    <p class="font-size-18 title bcard_title">You are about to make changes to your original card design. Your changes will replace the original design. To duplicate cards for others, please <a href="https://www.logomaker.com/myprojects" class="dynamic_go_to">click here</a></p>
+                    <p class="font-size-18 title pproducts_title">You are about to make changes to your original product design. Your changes will replace the original design. To duplicate the design, please <a href="https://www.logomaker.com/myprojects" class="dynamic_go_to">click here</a></p>
+                </div>
+                <h2 class="justify-center font-size-18 padding-15 padding-bottom">Are you sure you want to do this?</h2>
+                <div class="buttons justify-center">
+                    <a href="https://www.logomaker.com/myprojects#" class="lmx_primary_button button-width-narrow button-height-narrower button-padding-narrow font-size-18 font-bold" id="goToEdit">Yes</a>
+                    <a href="https://www.logomaker.com/myprojects#" class="lmx_primary_inverted_button button-width-narrower button-height-narrower button-padding-narrow font-size-18" id="goToHomeReturn">No</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="overlay bc_options_popup_overlay" style="display: none;"></div>
+<div class="thankYouBox bc_options_popup" style="display: none;">
+    <div class="bc_options_popup_container">
+        <a class="close" href="https://www.logomaker.com/myprojects#" title="Close Window">X</a>
+        <div class="popup_content">
+            <div class="row">
+                <div class="column twelve justify-left margin-10 margin-bottom">
+                    <h2 class="text-capitalize font-size-18">Card Options</h2>
+                </div>
+                                <div class="item_links item_link_">
+                        <div class="column twelve justify-center bc_image">
+                        <img src="./pozopoa_files/create_new_bcards.svg" alt="">
+                        </div>
+                        <div class="bc_options_urls">
+                                                            <div class="column twelve">
+                                        <a href="https://www.logomaker.com/business-cards/step2" class="color_dgrey_main_text color_primary_main_text_hover font-size-14 line-height-26" fls_ga4_designaproduct_selectors="0">Create a New Business Card</a>
+                                    </div>
+                                                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div><div class="overlay logo_options_popup_overlay" style="display: none;"></div>
+<div class="thankYouBox logo_options_popup" style="display: none;">
+    <div class="logo_options_popup_container">
+        <a class="close" href="https://www.logomaker.com/myprojects#" title="Close Window">X</a>
+        <div class="popup_content">
+            <div class="row">
+                <div class="column twelve justify-left margin-10 margin-bottom">
+                    <h2 class="text-capitalize font-size-18">Logo Options</h2>
+                </div>
+                                <div class="item_links item_link_972141558">
+                <div class="column twelve justify-center logo_image">
+                    <img src="./pozopoa_files/1j+ojlxEOMkX9Wyqfhe43D6kh...GCrRNOnRvFwWJqZ1A2n3AM71E72vBm47hlc1xFtFwKhBUPdcU1jyB5" alt="">
+                </div>
+                <div class="logo_options_urls">
+                                        <div class="column twelve">
+                        <a href="https://www.logomaker.com/checkout/972141558" class="color_dgrey_main_text color_primary_main_text_hover font-size-14 line-height-26">Buy Logo</a>
+                    </div>
+                                        <div class="column twelve">
+                        <a href="https://www.logomaker.com/business-cards/step1?clid=972141558" class="color_dgrey_main_text color_primary_main_text_hover font-size-14 line-height-26" fls_ga4_designaproduct_selectors="0">Design Business Cards</a>
+                    </div>
+                                        </div>
+                </div>
+                                <div class="item_links item_link_">
+                <div class="column twelve justify-center logo_image">
+                    <img src="./pozopoa_files/create_new_logo.png" alt="">
+                </div>
+                <div class="logo_options_urls">
+                                        <div class="column twelve">
+                        <a href="https://www.logomaker.com/get-started" class="color_dgrey_main_text color_primary_main_text_hover font-size-14 line-height-26">Create a New Logo</a>
+                    </div>
+                                        </div>
+                </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+<div class="overlay product_options_popup_overlay" style="display: none;"></div>
+<div class="thankYouBox product_options_popup" style="display: none;">
+    <div class="product_options_popup_container">
+        <a class="close" href="https://www.logomaker.com/myprojects#" title="Close Window">X</a>
+        <div class="popup_content">
+            <div class="row">
+                <div class="column twelve justify-left margin-10 margin-bottom">
+                    <h2 class="text-capitalize font-size-18">Product Options</h2>
+                </div>
+                                <div class="item_links item_link_">
+                <div class="column twelve justify-center product_image">
+                    <img src="./pozopoa_files/add_new_pp.png" alt="">
+                </div>
+                <div class="product_options_urls">
+                                        <div class="column twelve">
+                        <a href="https://www.logomaker.com/promotional-products" class="color_dgrey_main_text color_primary_main_text_hover font-size-14 line-height-26">Browse Promo Products</a>
+                    </div>
+                                        </div>
+                </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="custom_footer" class="fls_footer_4" style="margin-top:0px">
+    <div class="wl_width_xxl">
+                    <div class="row gutter-30 fls_footer_4_wrapper">
+                <div class="column three mobile-twelve">
+                    <picture>
+                        <source class="" type="image/webp" fls-lazyload-process="1" srcset="https://assets.logomaker.com/sites/all/themes/logomaker/images/2021-LogoMaker-Site-Logo_WHITE.webp">
+                        <source class="" type="image/png" fls-lazyload-process="1" srcset="https://assets.logomaker.com/sites/all/themes/logomaker/images/2021-LogoMaker-Site-Logo_WHITE.png">
+                        <img class="max-width-100 height-auto" alt="logo for the Logo Maker brand" width="190" height="37" fls-lazyload-process="1" src="./pozopoa_files/2021-LogoMaker-Site-Logo_WHITE.png">
+                    </picture>
+                    <div class="footer_informations">
+                        <div class="color_light_alt_hover_text font-size-11">2024 All Rights Reserved</div>
+                    </div>
+                                            <div class="lmxs_element lmxs_element_ lmxs_app_container width-100 display-inlineblock lmxs lmxs_type_social2 lmxs_type_general" style="" data-id="" data-type="social2" data-classes="lmxs lmxs_type_social2 lmxs_type_general">
+<div class="footer_4_social_container">
+<a href="https://www.facebook.com/FreeLogomaker/" title="Facebook Logo Maker" target="_blank" rel="noopener" class="lmk_social_icon_bg new_window_link  icon_fb social_icon color_light_alt_hover_background_hover ">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24">
+        <path d="M9,8H6v4H9V24h5V12h3.64L18,8H14V6.33c0-1,.19-1.33,1.11-1.33H18V0H14.19C10.6,0,9,1.58,9,4.61Z" transform="translate(-6)"></path>
+    </svg>
+    <span>Opens a new window</span>
+</a>
+<a href="https://twitter.com/diy_logomaker" title="Twitter Logo Maker" target="_blank" rel="noopener" class="lmk_social_icon_bg  new_window_link  icon_tw social_icon color_light_alt_hover_background_hover ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+    <span>Opens a new window</span>
+</a>
+    <a href="https://www.instagram.com/original_logomaker/" title="Instagram Logo Maker" target="_blank" rel="noopener" class="lmk_social_icon_bg instagram_lmk new_window_link  icon_fb social_icon color_light_alt_hover_background_hover ">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<style type="text/css">
+    .st0{fill:url(#SVGID_1_);}
+    .st1{fill:url(#SVGID_2_);}
+    .st2{fill:url(#SVGID_3_);}
+</style>
+            <lineargradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-180.1435" y1="-388.9767" x2="-178.4898" y2="-387.3244" gradientTransform="matrix(9.8882 0 0 -9.88 1782.4785 -3824.2959)">
+                <stop offset="0" style="stop-color:#FFD521"></stop>
+                <stop offset="5.000000e-02" style="stop-color:#FFD521"></stop>
+                <stop offset="0.5011" style="stop-color:#F50000"></stop>
+                <stop offset="0.95" style="stop-color:#B900B4"></stop>
+                <stop offset="0.9501" style="stop-color:#B900B4"></stop>
+                <stop offset="1" style="stop-color:#B900B4"></stop>
+            </lineargradient>
+            <lineargradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-142.0353" y1="-350.847" x2="-140.3809" y2="-349.1926" gradientTransform="matrix(9.8841 0 0 -9.8841 1405.0542 -3448.9697)">
+                <stop offset="0" style="stop-color:#FFD521"></stop>
+                <stop offset="5.000000e-02" style="stop-color:#FFD521"></stop>
+                <stop offset="0.5011" style="stop-color:#F50000"></stop>
+                <stop offset="0.95" style="stop-color:#B900B4"></stop>
+                <stop offset="0.9501" style="stop-color:#B900B4"></stop>
+                <stop offset="1" style="stop-color:#B900B4"></stop>
+            </lineargradient>
+            <lineargradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-155.1067" y1="-363.9161" x2="-153.453" y2="-362.262" gradientTransform="matrix(9.8829 0 0 -9.8853 1534.0573 -3578.5872)">
+                <stop offset="0" style="stop-color:#FFD521"></stop>
+                <stop offset="5.000000e-02" style="stop-color:#FFD521"></stop>
+                <stop offset="0.5011" style="stop-color:#F50000"></stop>
+                <stop offset="0.95" style="stop-color:#B900B4"></stop>
+                <stop offset="0.9501" style="stop-color:#B900B4"></stop>
+                <stop offset="1" style="stop-color:#B900B4"></stop>
+            </lineargradient>
+            <path class="st0" d="M15.9,5.2c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1.1,1.1,1.1C15.4,6.3,15.9,5.8,15.9,5.2"></path>
+            <path class="st1" d="M17.3,13.6c0,0.9-0.2,1.4-0.3,1.7c-0.2,0.4-0.4,0.7-0.7,1c-0.3,0.3-0.6,0.5-1,0.7c-0.3,0.1-0.8,0.3-1.7,0.3
+				c-0.9,0-1.2,0.1-3.6,0.1c-2.4,0-2.7,0-3.6-0.1c-0.9,0-1.4-0.2-1.7-0.3c-0.4-0.2-0.7-0.4-1-0.7c-0.3-0.3-0.5-0.6-0.7-1
+				c-0.1-0.3-0.3-0.8-0.3-1.7c0-0.9-0.1-1.2-0.1-3.6c0-2.4,0-2.7,0.1-3.6C2.7,5.5,2.9,5,3,4.7c0.2-0.4,0.4-0.7,0.7-1
+				C4,3.3,4.3,3.1,4.7,3C5,2.9,5.5,2.7,6.4,2.7c0.9,0,1.2-0.1,3.6-0.1c2.4,0,2.7,0,3.6,0.1c0.9,0,1.4,0.2,1.7,0.3
+				c0.4,0.2,0.7,0.4,1,0.7c0.3,0.3,0.5,0.6,0.7,1c0.1,0.3,0.3,0.8,0.3,1.7c0,0.9,0.1,1.2,0.1,3.6C17.4,12.4,17.4,12.7,17.3,13.6
+				L17.3,13.6z M18.9,6.3c0-1-0.2-1.6-0.4-2.2c-0.2-0.6-0.5-1.1-1-1.6c-0.5-0.5-1-0.8-1.6-1c-0.6-0.2-1.2-0.4-2.2-0.4
+				C12.8,1,12.4,1,10,1C7.6,1,7.2,1,6.3,1.1c-1,0-1.6,0.2-2.2,0.4C3.5,1.7,3,2,2.5,2.5C2,3,1.7,3.5,1.5,4.1C1.2,4.7,1.1,5.3,1.1,6.3
+				C1,7.2,1,7.6,1,10c0,2.4,0,2.7,0.1,3.7c0,1,0.2,1.6,0.4,2.2c0.2,0.6,0.5,1.1,1,1.6c0.5,0.5,1,0.8,1.6,1c0.6,0.2,1.2,0.4,2.2,0.4
+				c1,0,1.3,0.1,3.7,0.1c2.4,0,2.8,0,3.7-0.1c1,0,1.6-0.2,2.2-0.4c0.6-0.2,1.1-0.5,1.6-1c0.5-0.5,0.8-1,1-1.6
+				c0.2-0.6,0.4-1.2,0.4-2.2c0-1,0.1-1.3,0.1-3.7C19,7.6,19,7.2,18.9,6.3L18.9,6.3z"></path>
+            <path class="st2" d="M10,13c-1.7,0-3-1.3-3-3c0-1.7,1.3-3,3-3c1.7,0,3,1.3,3,3C13,11.7,11.7,13,10,13z M10,5.4
+				c-2.6,0-4.6,2.1-4.6,4.6c0,2.6,2.1,4.6,4.6,4.6s4.6-2.1,4.6-4.6C14.6,7.4,12.6,5.4,10,5.4z"></path>
+</svg>
+        <span>Opens a new window</span>
+    </a>
+</div>
+<style>
+    .social_icon{
+        background:#033c69;
+        border-radius:50%;
+        display:inline-block;
+        vertical-align:top;
+        width:40px;
+        height:40px;
+        text-align:center;
+    }
+    .social_icon_grey{
+        background:#D9D9D9;
+    }
+    .social_icon svg{
+        height:16px;
+        margin-top:1.1rem;
+    }
+    .social_icon svg path{
+        fill:#fff;
+    }
+    a.instagram_lmk:hover svg path.st0{
+        fill:url(#SVGID_0_);
+    }
+    a.instagram_lmk:hover svg path.st1{
+        fill:url(#SVGID_1_);
+    }
+    a.instagram_lmk:hover svg path.st2{
+        fill:url(#SVGID_2_);
+    }
+    .social_icon.icon_fb:hover path{
+        fill:#4267b2;
+    }
+    .social_icon.icon_tw:hover path{
+        fill:#38A1F3;
+    }
+    .social_icon.icon_pi:hover path{
+        fill:#BD081C;
+    }
+    .social_icon.icon_li:hover path{
+        fill:#0077B5;
+    }
+    .social_icon.icon_yt:hover path{
+        fill:#ff0000;
+    }
+    .lmk_social_icon_bg{
+        background-color: #85809D !important;
+    }
+    .lmk_social_icon_bg:hover{
+        background-color: #FFFFFF !important;
+    }
+</style>
+    
+    </div>
+
+                                    </div>
+                
+    <div class="category_column_container column three mobile-twelve ">
+        <div class="category_container margin-mobile-20 margin-mobile-bottom">
+            <div class="row">
+                <div class="column twelve mobile-eleven vertical-align-middle">
+                    <div class="color_light_alt_hover_text font-size-14 font-bold justify-left">
+                        Products                    </div>
+                </div>
+                <div class="column one desktop-hide mobile-show justify-mobile-right vertical-align-middle">
+                    <span class="dropdown_menu_arrow color_light_alt_hover_text material-icons vertical-align-middle">keyboard_arrow_right</span>
+                </div>
+            </div>
+            <ul class="category_urls_list">
+                                    <li class="category_title"><a href="https://www.logomaker.com/get-started" class="color_light_alt_hover_text font-size-14" title="Make a Logo">Make a Logo</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/products/business-cards" class="color_light_alt_hover_text font-size-14" title="Business Cards">Business Cards</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/website-builder" class="color_light_alt_hover_text font-size-14" title="Make a Website">Make a Website</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/google-apps" class="color_light_alt_hover_text font-size-14" title="Google Workspace">Google Workspace</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/local-business-listings" class="color_light_alt_hover_text font-size-14" title="Online Business Listings">Online Business Listings</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="category_column_container column three mobile-twelve ">
+        <div class="category_container margin-mobile-20 margin-mobile-bottom">
+            <div class="row">
+                <div class="column twelve mobile-eleven vertical-align-middle">
+                    <div class="color_light_alt_hover_text font-size-14 font-bold justify-left">
+                        Sample Logo Designs By Industry                    </div>
+                </div>
+                <div class="column one desktop-hide mobile-show justify-mobile-right vertical-align-middle">
+                    <span class="dropdown_menu_arrow color_light_alt_hover_text material-icons vertical-align-middle">keyboard_arrow_right</span>
+                </div>
+            </div>
+            <ul class="category_urls_list">
+                                    <li class="category_title"><a href="https://www.logomaker.com/agriculture-and-farm-logos/" class="color_light_alt_hover_text font-size-14" title="Agriculture &amp; Farming">Agriculture &amp; Farming</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/building-construction-logos/" class="color_light_alt_hover_text font-size-14" title="Building &amp; Construction">Building &amp; Construction</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/clothing-fashion-logos/" class="color_light_alt_hover_text font-size-14" title="Clothing &amp; Fashion">Clothing &amp; Fashion</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/education-logos/" class="color_light_alt_hover_text font-size-14" title="Education &amp; School">Education &amp; School</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/gym-fitness-logos/" class="color_light_alt_hover_text font-size-14" title="Gym &amp; Fitness">Gym &amp; Fitness</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/hotel-travel-logos/" class="color_light_alt_hover_text font-size-14" title="Hotel &amp; Travel">Hotel &amp; Travel</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/restaurant-logos/" class="color_light_alt_hover_text font-size-14" title="Restaurant">Restaurant</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/sample-logos/" class="color_light_alt_hover_text font-size-14" title="Browse More Industries">Browse More Industries</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="category_column_container column three mobile-twelve ">
+        <div class="category_container margin-mobile-20 margin-mobile-bottom">
+            <div class="row">
+                <div class="column twelve mobile-eleven vertical-align-middle">
+                    <div class="color_light_alt_hover_text font-size-14 font-bold justify-left">
+                        Resources                    </div>
+                </div>
+                <div class="column one desktop-hide mobile-show justify-mobile-right vertical-align-middle">
+                    <span class="dropdown_menu_arrow color_light_alt_hover_text material-icons vertical-align-middle">keyboard_arrow_right</span>
+                </div>
+            </div>
+            <ul class="category_urls_list">
+                                    <li class="category_title"><a href="https://www.logomaker.com/faq/" class="color_light_alt_hover_text font-size-14" title="Help Center">Help Center</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/contact-us/" class="color_light_alt_hover_text font-size-14" title="Contact Us">Contact Us</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/about-us/" class="color_light_alt_hover_text font-size-14" title="About Us">About Us</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/logo-design-testimonials/" class="color_light_alt_hover_text font-size-14" title="Testimonials">Testimonials</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/faq/" class="color_light_alt_hover_text font-size-14" title="FAQ">FAQ</a>
+                    </li>
+                                    <li class=""><a href="https://www.logomaker.com/blog/" class="color_light_alt_hover_text font-size-14" title="Blog">Blog</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+            </div>
+                <div class="row gutter-30 fls_footer_4_details">
+            <div class="column twelve justify-center">
+                <div class="category_line mobile-hide"></div>
+                <div class="fls_footer_4_second_wrapper">
+                    
+<div class="row">
+    <div class="column twelve line-height-50">
+        <select class="footer_language_select  background_transparent color_light_alt_hover_text font-hoverunderline border-none font-size-14" style="width:auto;">
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/?change_lang=en" selected="selected">English</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/pt/?change_lang=pt-pt">Português</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/de/?change_lang=de">Deutsch</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/fr/?change_lang=fr">Français</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/es/?change_lang=es">Español</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/nl/?change_lang=nl">Nederland</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/it/?change_lang=it">Italiano</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/tr?change_lang=tr">Türkçe</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/cn?change_lang=zh-hans"> 简体中文</option>
+                                            <option class="color_dgrey_main_text color_light_main_hover_background  font-hoverunderline font-size-12" value="https://www.logomaker.com/jp?change_lang=jp">日本語</option>
+                    </select>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="column twelve font-size-12 color_light_alt_hover_text justify-center padding-5 padding-vertical">
+                © 2024 LogoMix Inc.                <a href="https://www.logomaker.com/cookie-policy" target="_blank" rel="noopener" title="Cookie Policy" class="new_window_link color_light_alt_hover_text font-size-12 font-hoverunderline">Cookie Policy<span>Opens a new window</span></a>
+                / <a href="https://www.logomaker.com/privacy" target="_blank" rel="noopener" title="Privacy" class="new_window_link color_light_alt_hover_text font-size-12 font-hoverunderline privacy_policy_url">Privacy<span>Opens a new window</span></a>
+                / <a href="https://www.logomaker.com/terms" target="_blank" rel="noopener" title="Terms" class="new_window_link color_light_alt_hover_text  font-size-12 font-hoverunderline">Terms<span>Opens a new window</span></a>
+                / <a href="https://www.logomaker.com/dpa" target="_blank" rel="noopener" title="Data Processing" class="new_window_link color_light_alt_hover_text  font-size-12 font-hoverunderline">Data Processing<span>Opens a new window</span></a>
+                / <a href="https://www.logomaker.com/accessibility" target="_blank" rel="noopener" title="Accessibility" class="new_window_link color_light_alt_hover_text font-size-12 font-hoverunderline">Accessibility<span>Opens a new window</span></a>
+
+                            </div>
+                        <div class="column twelve font-size-12 padding-5 padding-vertical justify-center">
+                <!-- OptanonCookieSettingsButtonStart -->
+                <button id="ot-sdk-btn" class="ot-sdk-show-settings">CookieSettings</button>
+                <!-- OptanonCookieSettingsButtonEnd -->
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .fls_footer_4 {
+        background: #474065;
+    }
+    .fls_footer_4 a {text-decoration: none;}
+    .fls_footer_4 a:hover {color: #FFF!important;}
+    .fls_footer_4_wrapper {
+        padding: 6rem 0;
+    }
+    .footer_informations {
+        margin-bottom: 1.2rem;
+    }
+    .window_size_mobile .footer_4_social_container {
+        padding-bottom: 3rem;
+    }
+    .footer_4_social_container .social_icon:not(:last-child){
+        margin-right: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    .window_size_mobile .footer_4_social_container .social_icon:not(:last-child){
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+    .window_size_mobile .fls_footer_4_wrapper .category_column_container {
+        border-bottom: 1px solid #FFF;
+        margin-bottom: 2rem;
+    }
+    .window_size_mobile .fls_footer_4_wrapper .category_container {
+        margin-bottom: 2rem;
+    }
+    .category_urls_list {
+        padding: 0;
+        margin: 0;
+    }
+    .category_urls_list li {
+        list-style: none;
+        margin-bottom: 1.2rem;
+    }
+    .category_title {
+        margin-top: 1.2rem;
+    }
+    .category_line {
+        border-top: 1px solid #fff;
+        width: 100%;
+        height: 0;
+    }
+    .window_size_mobile .category_urls_list {
+        display: none;
+    }
+    .window_size_mobile .dropdown_selected {
+        display: block;
+    }
+    .footer_language_select {
+        -webkit-appearance: menulist;
+        -moz-appearance: menulist;
+    }
+    .fls_footer_4_details {
+        padding-bottom: 4rem;
+    }
+    .background_transparent {
+        background-color: transparent;
+    }
+    .padding-5.padding-vertical {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .dropdown_menu_arrow {
+        cursor: pointer;
+    }
+    #bottom {
+        display: none;
+    }
+
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.category_container .dropdown_menu_arrow').on("click", function () {
+            var selected = $(this).parents(".category_container").find(".category_urls_list").hasClass('dropdown_selected');
+            $(".category_container .category_urls_list").removeClass('dropdown_selected');
+            $('.category_container .dropdown_menu_arrow').text('keyboard_arrow_right');
+            if(selected){
+                $(this).parents(".category_container").find(".category_urls_list").removeClass('dropdown_selected');
+                $(this).text('keyboard_arrow_right');
+            }else {
+                $(this).parents(".category_container").find(".category_urls_list").addClass('dropdown_selected');
+                $(this).text('keyboard_arrow_down');
+            }
+        });
+    });
+</script>    <div class="flsbottom">
+            <div class="block block-block" id="block-block-34">
+            <div class="content"><script type="text/plain" class="">
+$(document).ready(function(){
+$('#fls-store-payment-form input').attr('autocomplete', 'off');
+});
+
+</script></div>
+    </div>
+    <div class="block block-block" id="block-block-74">
+            <div class="content"><style>
+.mobile_view .free-logo-upload .logo_raster_upload_container{
+width:100%;
+}
+#rsvErrors br{
+border:none !important;
+}
+body.page-body-home-return.page-lang-fr #my_recent_projects .orangeButton,
+body.page-body-home-return.page-lang-pt-pt #my_recent_projects .orangeButton{   	
+	font-size:1.4rem !important;
+}/*
+body.page-site-1.mobile_view:not(.new_domain_logo) #main_container #logo img{
+	width:50% !important;
+}*/
+body.page-body-home-return.page-lang-pt-pt.mobile_view #modular_home_return #my_recent_projects .orangeButton,
+body.page-body-home-return.page-lang-fr.mobile_view #modular_home_return #my_recent_projects .orangeButton{
+	font-size:1.1rem !important;
+}/*
+body.mobile_view[class*='holiday-greeting-cards-step2'] #step2_message_button{
+	margin: 0px;
+    margin-top: 10px;
+}
+body.mobile_view[class*='holiday-greeting-cards-step2'] .gc_message_step2_top table td{
+	display:block;
+	vertical-align:top;
+}
+body.mobile_view[class*='holiday-greeting-cards-step2'] .gc_message_step2_top{
+	width:100% !important;
+	margin:0px !important;
+}
+body.mobile_view[class*="holiday-greeting-cards-step2"] #step1 img.logo_thumb{
+		width:initial;
+	}*/
+div#logopackages_addons_page td, div#logopackages_addons_page th {
+    padding: 10px 7px;
+}
+
+.mobile_view #modular_home_return .special span{
+	font-size:2rem;
+}
+/*#modular_home_return #my_recent_projects{
+    text-align:center;
+}*/
+.page-body-home.mobile_view #new_home_page.home_new_design .row_container.row_container_second .row .img_cont{
+float:none;
+margin:0px auto;
+}
+.page-body-home.mobile_view #new_home_page.home_new_design .feed_item h2{
+text-align:center;
+}
+.page-body-home.mobile_view #new_home_page.home_new_design .feed_item img{
+float:none;
+}
+.page-body-home.mobile_view #new_home_page.home_new_design .row_container.row_container_second .row .cont { 
+width: 100%; 
+}
+.page-body-home.mobile_view #new_home_page.home_new_design .feed_item{
+width:100%;
+}
+.page-body-home.mobile_view #new_home_page.home_new_design #why_use_fls_index{
+	max-width:100%;
+}
+.page-body-home.mobile_view #new_home_page.home_new_design #how_it_works_index{
+	padding-left: 0px !important;
+    border-left: none;
+}
+#mylogos_page_container .mylogos_page_right{
+margin-right:-20px;
+}
+body:not(.page-country-US) .bcweb_popup_content.logowebv2_popup_content .alreadyowndomv2{
+	position: absolute;
+    bottom: 75px;
+    left: 58%;
+}
+body.mobile_view #step-checkout1 .website_upsell .upsells_new_single[item="523"] .google_apps_callout,
+body.mobile_view #step-checkout1 .website_upsell .upsells_new_single[item="532"] .google_apps_callout{
+	background-size:80%;
+	right:-76px;
+	top:-77px;
+}
+body.mobile_view #step-checkout1 .website_upsell .upsells_new_single[item="532"] .descr_row{
+height:475px;
+}
+body.mobile_view #step-checkout1  .website_upsell .upsells_new_single[item="523"] .upsells_new_check_logo,
+body.mobile_view #step-checkout1  .website_upsell .upsells_new_single[item="532"] .upsells_new_check_logo{
+width:90%;
+}
+#returnHome .row{
+border-bottom:0px;
+}
+
+#returnHome .row:first-child{
+border-bottom:1px solid #ddd;
+}
+.page-body-newsletter-february-2017 .left_container .orange-arrow-button-large span{
+	text-transform: none;
+}
+.page-body-products-158 .body_page_grey_top .bc-lp-image img{
+	height:300px;
+}
+.page-body-products-158 .disclaimer {
+	    margin-top: -40px;
+    text-align: left;
+    color: #FF0000;
+    padding-left: 20px;
+}
+body .thankYouBox.store_checkout_lightbox {
+z-index:150;
+}
+body.page-country-NL[class*="page-body-thankyou"] .popup_css .websites .offer_container ul{
+    padding-left: 25px;
+    max-width: 268px;
+}
+.page-body-step1 .popup_bg{
+width:970px;
+}
+/*html body.page-body-step1 .thankYouBox .new_design {
+    position: static;
+position: initial;
+    }*/
+body[class*='page-body-checkout'] .payment_form .upsell_container .premium_package_upsell .upsells_new #bubble{
+font-size:1.5rem;
+}
+body[class*='page-body-checkout'] .orangeBtn_h50 .orangeBtn_center{
+font-size:1.5rem !important;
+}
+.continue_with_logo{
+  margin-bottom: 5px;
+}
+body[class*='page-country-BR page-body-product-options-'] .payment_types_imgs{
+  display:none;
+}
+.body_container > img {
+  position: absolute;
+  left: -200px;
+  top: 0px;
+}
+#returnHome h3 {
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+}
+.package_content .fls_checkmark{
+background-image:url('https://freelogo-assets.s3.amazonaws.com/sites/all/themes/freelogoservices/images/icons/checkmark_holder.png');
+}
+@-moz-document url-prefix() {
+#showcaseProduct{
+	margin-top:15px;
+}
+#showcaseProduct .leftSection, #showcaseProduct .rightSection{
+	margin-top:25px;
+}
+#showcaseProduct .leftSection .breadcrumb{
+top:145px;
+}
+}
+#step-checkout1 .checkout_left_wrapper .checkout_element_image IMG.img_396,
+#step-checkout1 .checkout_left_wrapper .checkout_element_image IMG.img_391,
+#step-checkout1 .checkout_left_wrapper .checkout_element_image IMG.img_401{
+	width: 110px;
+        margin: 10px auto;
+}
+#mycart .card_thumb.img_391, #mycart .card_thumb.img_396, #mycart .card_thumb.img_401{
+max-width:70px;
+}
+.store_checkout_lightbox .popup_item_left .popup_item_image IMG.img_391, 
+.store_checkout_lightbox .popup_item_left .popup_item_image IMG.img_396, 
+.store_checkout_lightbox .popup_item_left .popup_item_image IMG.img_401{
+max-width:100px;
+}
+.page-body-googleapps-step4.page-site-2  .container_title {
+    background: #555;
+}
+.page-body-googleapps-step4.page-site-2  .container_step{
+    color: #a10202;
+} 
+.page-body-googleapps-step4.page-site-2 .right a:hover{
+    color: #a10202;
+}
+
+.page-body-business-cards-step4 .head_box1{
+width:312px;
+}
+
+body.orientation_portrait .logo_homepage_blue_responsive .lp_form_container .lp_form_button{
+min-height:initial;
+}
+
+.page-body-offer.orientation_portrait .lp_form_container_header p, .page-body-specialoffer.orientation_portrait .lp_form_container_header p{
+font-size:1.4rem;
+}
+
+.page-body-offer.orientation_portrait .lp_form_container_header h2.title, .page-body-specialoffer.orientation_portrait .lp_form_container_header h2.title{
+line-height:2.6rem;
+}
+
+#products_page_options span.option_regular_price{
+display:none;
+}
+
+body[class*="page-body-hostgator"] #bcworkflow_category_wrapper select{
+   padding-left: 5px;
+}
+body[class*='admin-fls-shipping-edit-set'] .country_item{
+   height:auto;
+   min-height:16px;
+}
+#fls-workflows-edit .country_item{
+   height:auto;
+   min-height:16px;
+}
+
+/*
+.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4,
+.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price{
+    display:none;
+}
+*/
+
+.page-body-pen-mailer p.prPrice{
+    display:none;
+}
+.couponForm,.loginForm{
+    background:#FBFBFB;
+}
+
+body .flsbottom{
+max-width:100%;
+}
+body.page-body-step1 .new_design{
+	position:relative;
+}
+.page-body-home #snapengage-button{
+    display:none !important;
+}
+/* custom upload center image */
+/*
+body.page-body-business-cards-upload form#bc-custom-upload-page-form img.card-preview,
+body.page-body-business-cards-upload-pdf form#bc-custom-upload-page-form img.card-preview {
+    margin: 0px auto;
+    vertical-align: middle;
+    display: inline-block !important;
+}
+body.page-body-business-cards-upload form#bc-custom-upload-page-form .card-preview-wrapper,
+body.page-body-business-cards-upload-pdf form#bc-custom-upload-page-form .card-preview-wrapper {
+    line-height: 24.2rem;
+    text-align:center;
+    min-height:242px;
+}
+body.page-body-business-cards-upload form#bc-custom-upload-page-form  div.card-preview-guidelines span,
+body.page-body-business-cards-upload-pdf form#bc-custom-upload-page-form  div.card-preview-guidelines span{
+    margin-left:0px;
+}
+body.page-body-business-cards-upload form#bc-custom-upload-page-form div.card-preview-guidelines,
+body.page-body-business-cards-upload-pdf form#bc-custom-upload-page-form div.card-preview-guidelines{
+    min-height:229px;
+}
+body.page-body-business-cards-upload form#bc-custom-upload-page-form div.card-preview-guidelines span,
+body.page-body-business-cards-upload-pdf form#bc-custom-upload-page-form div.card-preview-guidelines span{
+    min-height:215px;
+}
+body.page-body-business-cards-upload form#bc-custom-upload-page-form div.bc_preview_loading,
+body.page-body-business-cards-upload-pdf form#bc-custom-upload-page-form div.bc_preview_loading{
+    height:241px;
+}
+*/
+
+body.page-site-3 .radio_mic:lang(de),
+body.page-site-3 .radio_mic:lang(es),
+body.page-site-3 .radio_mic:lang(fr),
+body.page-site-3 .radio_mic:lang(pt),
+body.page-site-3 .radio_mic:lang(it),
+body.page-site-3 .radio_mic:lang(tr),
+body.page-site-3 .radio_mic:lang(cn),
+body.page-site-3 .radio_mic:lang(jp),
+body.page-site-3 .radio_mic:lang(nl)
+{ display:none; }
+
+
+
+.websites_domain_results input.fls-bluebutton, .domain_not_available input.disabled{
+font-size:1.4rem;
+}
+
+.websites_domain_suggestions_form .orangeButton{
+font-size:1.4rem;
+}
+.websites_domain_search_button{
+font-size:1.4rem;
+}
+
+
+.logositepack_banner .logositepack_banner_container .logositepack_banner_element_right {
+    background-image: url("https://freelogo-assets.s3.amazonaws.com/sites/all/themes/freelogoservices/images/general/logopackages_banner_right.png");
+}
+
+.logositepack_banner .logositepack_banner_container .logositepack_banner_element_left {
+    background-image: url("https://freelogo-assets.s3.amazonaws.com/sites/all/themes/freelogoservices/images/general/logopackages_banner_left.png");
+}
+
+body[class*="page-body-checkout"] .websites_domain_search_category_outer{
+   background-image: url("https://freelogo-assets.s3.amazonaws.com/sites/all/themes/freelogoservices/images/websites/dropdown_blue.jpg") ;
+}
+
+body[class*="page-body-checkout"] .websites_domain_results .websites_domain_suggestion_left {
+   background-image: url("https://freelogo-assets.s3.amazonaws.com/sites/all/themes/freelogoservices/images/websites/banners/websites_dot.jpg");
+}
+body[class*="page-body-checkout"] .menu a span {
+   background-image: url("https://freelogo-assets.s3.amazonaws.com/sites/all/themes/freelogoservices/images/list_arrow_down.png");
+}
+
+#page_id_1and1 #logo_index {
+float:none;
+}
+
+body .popup_css .popup_css_container p{
+     color:#000;
+}
+
+
+html body.page-body-index4v2 #top {
+    display: block;
+}
+#returnHome #brw .item{
+	background-image:none;	
+	font-size:2rem !important;	
+        width:100%;
+        padding:0px;
+}
+html body.mobile_view.step2_gallery_mobile.page-site-5 #main .customize_logos,
+html body.mobile_view.step2_gallery_mobile.page-site-3 #main .customize_logos{
+line-height:2.6rem !important;
+}
+
+body #onetrust-consent-sdk #onetrust-accept-btn-handler, body #onetrust-banner-sdk #onetrust-reject-all-handler{
+    background-color: #005596 !important;
+    border-color: #005596  !important;
+    color: #FFFFFF  !important;
+}
+
+body #onetrust-pc-btn-handler {
+    background-color: #005596 !important;
+    color: #fff !important;
+    border: 0px !important;
+}
+
+body #onetrust-banner-sdk #onetrust-policy-text a {
+    color:#005596 !important;
+}
+
+.manage_all_of_web_apps_container{display:none;}
+
+</style>
+
+<script type="text/plain" class="">
+
+if($(".alreadyowndomv2").length>0) {
+$(".bcweb_popup_content.logowebv2_popup_content .ownDomain").hide();
+$(".bcweb_popup .ownDomain").hide();
+}
+
+if($("body[class*='page-body-business-cards-step3']").length>0){
+$(".alreadyowndomv2").click(function(){
+			BCWEB.hidePopUp();					
+		});
+	}
+
+/*if($('.thankYouBox.eucard_popup').length > 0){
+$(".eucard_popup .continueBtn").css('display','inline-block');
+}*/
+/*hot fix on live to fix wrong hard coded start.freelogoservices.com URL  http://screencast.com/t/ImzJv5wkhl0 */
+$('.newDesign #banner a.fls-orange-button').each(function(){
+var href = $(this).attr('href');
+href = href.replace('start', 'www');
+$(this).attr('href', href);
+});
+/* END hot fix on live to fix wrong hard coded start.freelogoservices.com URL  http://screencast.com/t/ImzJv5wkhl0 */
+
+/*
+var text = $('.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4').html();
+if (text) {
+ text = text.replace('$9.95','$12.95');
+ $('.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4').html(text);
+}
+$('.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4').show();
+
+var text = $('.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price').html();
+if (text) {
+ text = text.replace('$9.95','$12.95');
+ $('.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price').html(text);
+}
+$('.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price').show();
+*/
+
+var text = $('.page-body-pen-mailer .prPrice').html();
+if (text) {
+text = text.replace('$0.77', '$0.69');
+$('.page-body-pen-mailer .prPrice').html(text);
+}
+$('.page-body-pen-mailer .prPrice').show();
+
+if($('#bc_upload_specs').length>0){
+$('#bc_upload_specs span').each(function(){
+    var resolution_text =  $(this).html();
+    resolution_text = resolution_text.replace('683','638');
+    $(this).html(resolution_text);
+});
+}
+
+
+    if($('.social_login_page').length && $('#fls_mobile_button').length){
+        setTimeout(function(){
+            $('#edit-submit').click(function(){
+                if ($('#user-pass').length > 0) $('#user-pass').submit();
+                if ($('#user-login').length > 0) $('#user-login').submit();
+            });
+        },1000);
+    }
+
+
+if($('#fls-store-payment-form').length){
+
+}
+Drupal.settings.has_bc_with_no_logo = 0;
+if($(".page-site-7 #step-checkout1 #edit-submit-braintree-hosted-fields").length) $(".page-site-7 #step-checkout1 #edit-submit-braintree-hosted-fields").addClass("orangeBtn_h50");
+if($(".page-site-13 #step-checkout1 #edit-submit-braintree-hosted-fields").length) $(".page-site-13 #step-checkout1 #edit-submit-braintree-hosted-fields").addClass("orangeBtn_h50");
+if($(".page-site-10 #step-checkout1 #edit-submit-braintree-hosted-fields").length) $(".page-site-10 #step-checkout1 #edit-submit-braintree-hosted-fields").addClass("orangeBtn_h50");
+</script>
+</div>
+    </div>
+    <div class="block block-block" id="block-block-196">
+            <div class="content"><style>
+body.body-theme-flat .notice_customer_service_phone{
+margin-top:0px;
+}
+body.page-body-theme-20.body-theme-flat .row_container:first-child {
+    min-height: 342px;
+}
+html body.body-theme-flat li.print_products_element {
+    float: none;
+    display: inline-block;
+}
+html body.body-theme-flat li.print_products_element a{
+    border:none;
+}
+html body.body-theme-flat .print_products_list{
+   text-align:center;
+}
+body.body-theme-flat .thankYouBox{
+    left: 50% !important;
+    -ms-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+}
+.expro_products_group_list .expro_product_image#exp_536 .expro_product_image_ovaerlay {
+    display:none;
+}
+.expro_products_group_list .expro_product_image#exp_536 img{
+    -ms-transform: rotate(-50deg); /* IE 9 */
+    -webkit-transform: rotate(-50deg); /* Chrome, Safari, Opera */
+    transform: rotate(-50deg);
+    margin-top:90px !important;
+    height:100px;
+}
+
+.holiday-time-banner.blackcyber, .page-body-myprojects .promo_slider{display:none;}
+
+</style></div>
+    </div>
+    <div class="block block-block" id="block-block-317">
+            <div class="content"><style>
+body.mobile_view.body-theme-flat .hurricane_msg{
+	height:56px;
+	line-height:2.7rem;
+}
+body.mobile_view.body-theme-flat .hurricane_msg span.msg{
+    font-size:1.3rem;
+	line-height:1.3rem;
+	padding-right:0px;
+}
+body.mobile_view.body-theme-flat .coupon-message span.close{
+	padding:5px 31px 24px 0px;
+	background-position-y:-5px;
+}
+body.mobile_view.body-theme-flat.body-coupon-message{
+	 /*margin-top: 58px !important;*/
+}
+</style>
+</div>
+    </div>
+    <div class="block block-block" id="block-block-384">
+            <div class="content">
+<style>
+body.body-theme-flat .ie_popup_overlay{
+   /* z-index:9999998 !important;*/
+    z-index:99999989 !important;
+}
+body.body-theme-flat .ie_popup{
+    z-index:99999989 !important;
+}
+</style>
+
+<script type="text/plain" class="">
+$(document).ready(function(){
+if ($('.ie_popup').length > 0) {
+$('.thankYouBox').hide();
+$('.ie_popup').show();
+}
+});
+</script></div>
+    </div>
+    </div>
+<div id="bottom" class="wl_footer_hidden">
+        <div class="block block-block" id="block-block-16">
+            <div class="content"><div style="font-size:1.1rem;" class="footer-data"><a href="https://www.logomaker.com/privacy" target="_blank" rel="noopener" class="new_window_link" title="Privacy Policy">Privacy Policy<span>Opens a new window</span></a> | 
+<a href="https://www.logomaker.com/terms" target="_blank" rel="noopener" class="new_window_link" title="Terms of Use">Terms of Use<span>Opens a new window</span></a></div>
+</div>
+    </div>
+    <div class="block block-block" id="block-block-20">
+            <div class="content"><!-- begin SnapEngage code
+<script type="text/plain" class="flsjsdeferprocess">
+    (function() {
+        var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+        se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/d9a5fcca-2d61-4e11-ad2c-68a909ef41ac.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+    })();
+</script>
+end SnapEngage code -->
+
+<script type="text/plain" class="">
+
+
+
+
+$( document ).ready(function() {
+$("#globalHelpBtn").removeClass('display-none');
+$("#globalHelpBtn").click(function(){
+var support_centre_url;
+		var lang=Drupal.settings.lang;
+		if(lang=="") lang="en";
+else if(lang=="es-mx") lang="es";
+		else if(lang=="zh-hans" || lang=="cn") lang="zh_cn";
+		else if(lang=="jp") lang="ja";
+
+              if((Drupal.settings.baseUrl).search("logomaker.com")!=-1){					
+					switch(lang){
+						case 'en': support_centre_url="contact-us/"; break;
+						case 'pt': support_centre_url="pt/fale-com-logomaker/"; break;
+						case 'de': support_centre_url="de/logomaker-kontaktieren/"; break;
+						case 'fr': support_centre_url="fr/contactez-logomaker/"; break;
+						case 'es': support_centre_url="es/contacto-logomaker/"; break;
+						case 'nl': support_centre_url="nl/neem-contact-met-ons-op/"; break;
+						case 'it': support_centre_url="it/contatta-logomaker/"; break;
+						default: support_centre_url="faq/"; break;
+					}
+                                  support_centre_url = Drupal.settings.baseUrl + "/" + support_centre_url;
+				}
+		else if((Drupal.settings.baseUrl).search("freelogoservices")!=-1) support_centre_url="https://help.freelogoservices.com/customer/"+lang+"/portal/articles";
+                else if((Drupal.settings.baseUrl).search("deluxelogocreator")!=-1) support_centre_url="https://help.deluxelogocreator.com/customer/"+lang+"/portal/articles";
+		else if((Drupal.settings.baseUrl).search("mycorp")!=-1) support_centre_url="https://help.mycorpbrandlauncher.com/customer/"+lang+"/portal/articles";
+		else if((Drupal.settings.baseUrl).search("printingnow")!=-1) support_centre_url="https://help.printingnow.com/customer/"+lang+"/portal/articles";
+		else if((Drupal.settings.baseUrl).search("logomix")!=-1) support_centre_url="https://help.logomix.com/customer/"+lang+"/portal/articles";
+               else if((Drupal.settings.baseUrl).search("earthlinkbrandbuilder")!=-1) support_centre_url="https://help.earthlinkbrandbuilder.com/customer/"+lang+"/portal/articles";
+
+		support_centre_window=window.open(support_centre_url,'_blank');
+		if (window.focus) {support_centre_window.focus();}
+		return false;
+});
+	$("#globalHelpBtn").mouseover(function(){
+	$(this).addClass("active");});
+$("#globalHelpBtn").mouseout(function(){
+
+	$(this).removeClass("active");});
+});
+
+
+</script>
+<div id="globalHelpBtn" class="green closed">
+ <div class="border">
+  <p>Help</p>
+  <div class="clear"></div>
+ </div>
+</div>
+
+<script type="text/plain" class="">
+
+var notice_img=$('#notice_package_1 .bc_notice_preview').attr('src');
+$('#notice_package_4 .bc_notice_preview').attr('src',notice_img);
+</script>
+</div>
+    </div>
+    <div class="block block-block" id="block-block-420">
+            <div class="content">
+<script type="text/plain" class="optanon-category-C0004">
+(function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api.botsonic.ai",
+    token: "393f5490-895e-4d67-917f-738b1535ca35",
+  });
+</script>
+
+</div>
+    </div>
+    <div class="block block-block" id="block-block-410">
+            <div class="content"><script type="text/plain" class="">
+$(document).on('mouseover', '#onetrust-policy-text a, #ot-pc-content a', function(){
+    var href = $(this).attr('href');
+	if (href == 'https://www.deluxe.com/policy/deluxe-cookies-policy/' || href == 'https://cookiepedia.co.uk/giving-consent-to-cookies') {
+        var lang = window.navigator.language.split('-');
+		var langs = ['de', 'es', 'fr', 'it', 'pt', 'nl'];
+		if (langs.indexOf(lang[0]) === -1) 
+			lang = '';
+		else
+			lang = '/'+lang[0];
+        var new_href = window.location.origin + lang + '/cookie-policy';
+        $(this).attr('href', new_href);
+    }
+});
+</script></div>
+    </div>
+    <br>
+
+    </div>
+
+
+
+
+
+
+<script type="text/plain" class="optanon-category-C0004">(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"25011518"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img alt="Bing Pixel" src="//bat.bing.com/action/0?ti=25011518&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript> 
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        menu_toggler();
+        show_hide_nav_submenu();
+    });
+    function menu_toggler() {
+        $(".nav-item-toggler-button").on("click", function (event) {
+            event.preventDefault();
+            var parent = $(this).parent();
+            if (parent.hasClass('nav-item-toggler-active')) {
+                parent.removeClass('nav-item-toggler-active');
+                $('.nav-item-my-account, .nav-item-my-projects').css('pointer-events', 'auto');
+                $('.nav-item-toggler-icon').text('menu');
+            } else {
+                parent.addClass('nav-item-toggler-active');
+                $('.nav-item-my-account, .nav-item-my-projects').css('pointer-events', 'none');
+                $('.nav-item-toggler-icon').text('close');
+            }
+        });
+    }
+    function show_hide_nav_submenu() {
+        $(".navbar-nav-has-submenu > a").click(function (event) {
+            event.preventDefault();
+            var parent = $(this).parent();
+            var selectedNavItem = $(this);
+            if (parent.hasClass('open')) {
+                parent.removeClass('open').find('.navbar-nav-has-submenu-icon').text('expand_more');
+                selectedNavItem.removeClass('font-bold');
+            } else {
+                $('.navbar-nav-has-submenu.open').removeClass('open').find('.navbar-nav-has-submenu-icon').text('expand_more').end().find('.dropdown-item').removeClass('font-bold');
+                parent.addClass('open').find('.navbar-nav-has-submenu-icon').text('expand_less');
+                selectedNavItem.addClass('font-bold');
+            }
+        });
+    }
+</script><script type="text/javascript">
+$(document).ready(function(){
+$('#fls-store-payment-form input').attr('autocomplete', 'off');
+});
+
+</script><script type="text/javascript">
+
+if($(".alreadyowndomv2").length>0) {
+$(".bcweb_popup_content.logowebv2_popup_content .ownDomain").hide();
+$(".bcweb_popup .ownDomain").hide();
+}
+
+if($("body[class*='page-body-business-cards-step3']").length>0){
+$(".alreadyowndomv2").click(function(){
+			BCWEB.hidePopUp();					
+		});
+	}
+
+/*if($('.thankYouBox.eucard_popup').length > 0){
+$(".eucard_popup .continueBtn").css('display','inline-block');
+}*/
+/*hot fix on live to fix wrong hard coded start.freelogoservices.com URL  http://screencast.com/t/ImzJv5wkhl0 */
+$('.newDesign #banner a.fls-orange-button').each(function(){
+var href = $(this).attr('href');
+href = href.replace('start', 'www');
+$(this).attr('href', href);
+});
+/* END hot fix on live to fix wrong hard coded start.freelogoservices.com URL  http://screencast.com/t/ImzJv5wkhl0 */
+
+/*
+var text = $('.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4').html();
+if (text) {
+ text = text.replace('$9.95','$12.95');
+ $('.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4').html(text);
+}
+$('.page-body-bc-lp-simple #bc-lp-dual-right-grey-content > h4').show();
+
+var text = $('.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price').html();
+if (text) {
+ text = text.replace('$9.95','$12.95');
+ $('.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price').html(text);
+}
+$('.page-body-bc-lp-cat #bc_lp_cat.cards50_template .package_price').show();
+*/
+
+var text = $('.page-body-pen-mailer .prPrice').html();
+if (text) {
+text = text.replace('$0.77', '$0.69');
+$('.page-body-pen-mailer .prPrice').html(text);
+}
+$('.page-body-pen-mailer .prPrice').show();
+
+if($('#bc_upload_specs').length>0){
+$('#bc_upload_specs span').each(function(){
+    var resolution_text =  $(this).html();
+    resolution_text = resolution_text.replace('683','638');
+    $(this).html(resolution_text);
+});
+}
+
+
+    if($('.social_login_page').length && $('#fls_mobile_button').length){
+        setTimeout(function(){
+            $('#edit-submit').click(function(){
+                if ($('#user-pass').length > 0) $('#user-pass').submit();
+                if ($('#user-login').length > 0) $('#user-login').submit();
+            });
+        },1000);
+    }
+
+
+if($('#fls-store-payment-form').length){
+
+}
+Drupal.settings.has_bc_with_no_logo = 0;
+if($(".page-site-7 #step-checkout1 #edit-submit-braintree-hosted-fields").length) $(".page-site-7 #step-checkout1 #edit-submit-braintree-hosted-fields").addClass("orangeBtn_h50");
+if($(".page-site-13 #step-checkout1 #edit-submit-braintree-hosted-fields").length) $(".page-site-13 #step-checkout1 #edit-submit-braintree-hosted-fields").addClass("orangeBtn_h50");
+if($(".page-site-10 #step-checkout1 #edit-submit-braintree-hosted-fields").length) $(".page-site-10 #step-checkout1 #edit-submit-braintree-hosted-fields").addClass("orangeBtn_h50");
+</script><script type="text/javascript">
+$(document).ready(function(){
+if ($('.ie_popup').length > 0) {
+$('.thankYouBox').hide();
+$('.ie_popup').show();
+}
+});
+</script><script type="text/javascript">
+
+
+
+
+$( document ).ready(function() {
+$("#globalHelpBtn").removeClass('display-none');
+$("#globalHelpBtn").click(function(){
+var support_centre_url;
+		var lang=Drupal.settings.lang;
+		if(lang=="") lang="en";
+else if(lang=="es-mx") lang="es";
+		else if(lang=="zh-hans" || lang=="cn") lang="zh_cn";
+		else if(lang=="jp") lang="ja";
+
+              if((Drupal.settings.baseUrl).search("logomaker.com")!=-1){					
+					switch(lang){
+						case 'en': support_centre_url="contact-us/"; break;
+						case 'pt': support_centre_url="pt/fale-com-logomaker/"; break;
+						case 'de': support_centre_url="de/logomaker-kontaktieren/"; break;
+						case 'fr': support_centre_url="fr/contactez-logomaker/"; break;
+						case 'es': support_centre_url="es/contacto-logomaker/"; break;
+						case 'nl': support_centre_url="nl/neem-contact-met-ons-op/"; break;
+						case 'it': support_centre_url="it/contatta-logomaker/"; break;
+						default: support_centre_url="faq/"; break;
+					}
+                                  support_centre_url = Drupal.settings.baseUrl + "/" + support_centre_url;
+				}
+		else if((Drupal.settings.baseUrl).search("freelogoservices")!=-1) support_centre_url="https://help.freelogoservices.com/customer/"+lang+"/portal/articles";
+                else if((Drupal.settings.baseUrl).search("deluxelogocreator")!=-1) support_centre_url="https://help.deluxelogocreator.com/customer/"+lang+"/portal/articles";
+		else if((Drupal.settings.baseUrl).search("mycorp")!=-1) support_centre_url="https://help.mycorpbrandlauncher.com/customer/"+lang+"/portal/articles";
+		else if((Drupal.settings.baseUrl).search("printingnow")!=-1) support_centre_url="https://help.printingnow.com/customer/"+lang+"/portal/articles";
+		else if((Drupal.settings.baseUrl).search("logomix")!=-1) support_centre_url="https://help.logomix.com/customer/"+lang+"/portal/articles";
+               else if((Drupal.settings.baseUrl).search("earthlinkbrandbuilder")!=-1) support_centre_url="https://help.earthlinkbrandbuilder.com/customer/"+lang+"/portal/articles";
+
+		support_centre_window=window.open(support_centre_url,'_blank');
+		if (window.focus) {support_centre_window.focus();}
+		return false;
+});
+	$("#globalHelpBtn").mouseover(function(){
+	$(this).addClass("active");});
+$("#globalHelpBtn").mouseout(function(){
+
+	$(this).removeClass("active");});
+});
+
+
+</script><script type="text/javascript">
+
+var notice_img=$('#notice_package_1 .bc_notice_preview').attr('src');
+$('#notice_package_4 .bc_notice_preview').attr('src',notice_img);
+</script><script type="text/javascript">
+$(document).on('mouseover', '#onetrust-policy-text a, #ot-pc-content a', function(){
+    var href = $(this).attr('href');
+	if (href == 'https://www.deluxe.com/policy/deluxe-cookies-policy/' || href == 'https://cookiepedia.co.uk/giving-consent-to-cookies') {
+        var lang = window.navigator.language.split('-');
+		var langs = ['de', 'es', 'fr', 'it', 'pt', 'nl'];
+		if (langs.indexOf(lang[0]) === -1) 
+			lang = '';
+		else
+			lang = '/'+lang[0];
+        var new_href = window.location.origin + lang + '/cookie-policy';
+        $(this).attr('href', new_href);
+    }
+});
+</script><span id="spanCalculateTextWidth" style="position: absolute; top: 0px; opacity: 0; left: -2000px;"></span></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
